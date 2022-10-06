@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./stylesheet/main.css" />
+    <style>
+      * {
+        /* outline: 0.1px gray solid; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d-flex">
+      <aside class="sidebar vh-100 border-end d-flex flex-column bg-white ">
+        <!-- 1.名稱 -->
+        <div class="p-4"><strong>六角西餐廳</strong> - 後台管理</div>
+        <!-- 2.選單 -->
+        <div class="overflow-auto mt-3">
+          <div>
+            <a href="#" class="sidebar-link active">
+              <div class="px-4"><i class="bi bi-house-door"></i> 首頁</div>
+            </a>
+          </div>
+
+          <div>
+            <a
+              href="#menu-order"
+              class="sidebar-link"
+              data-bs-toggle="collapse"
+            >
+              <div class="d-flex justify-content-between px-4">
+                <p class="mb-0"><i class="bi bi-card-checklist"></i> 訂單管理</p>
+                <i class="bi bi-caret-down"></i>
+              </div>
+            </a>
+            <div class="collapse" id="menu-order">
+              <a href="#" class="sidebar-link">
+                <div class="ps-5">
+                    其他選項
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 3.登出 --><!-- 自動置底 -->
+        <a class="mt-auto sidebar-link " href="#">
+          <div class="px-4">登出<i class="bi bi-box-arrow-in-right"></i></div>
+        </a>
+      </aside>
+
+      <main class="main">
+        <div class="bg-white w-100 border-bottom sticky-top">
+          <a
+            href="#"
+            class="d-inline-block py-3 px-4 border-end"
+            id="toggle-btn"
+          >
+            <i class="bi bi-arrows-angle-expand"></i
+          ></a>
+        </div>
+
+
+
+      </main>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./javascripts/main.js"></script>
+  </body>
+</html>
