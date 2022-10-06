@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./stylesheet/main.css" />
+    <style>
+      * {
+        outline: 0.1px gray solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d-flex">
+      <aside class="sidebar vh-100 border-end"></aside>
+
+      <main class="main">
+        <div class="bg-white w-100 border-bottom">
+          <a
+            href="#"
+            class="d-inline-block py-3 px-4 border-end"
+            id="toggle-btn"
+          >
+            <i class="bi bi-arrows-angle-expand"></i
+          ></a>
+        </div>
+      </main>
+    </div>
+    <script>
+      const toggleMenuBtn = document.querySelector("#toggle-btn");
+      const body = document.querySelector("body");
+      toggleMenuBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        body.classList.toggle("sidebar-toggled");
+      });
+    </script>
+  </body>
+</html>
