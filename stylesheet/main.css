@@ -35,6 +35,7 @@
   --bs-nbaBlue: #0253a5;
   --bs-nbaRed: #cc2b31;
   --bs-pickBlack: #3A3A3A;
+  --bs-pickYellow: #F9C745;
   --bs-primary-rgb: 111, 66, 193;
   --bs-secondary-rgb: 217, 154, 231;
   --bs-success-rgb: 154, 205, 50;
@@ -46,6 +47,7 @@
   --bs-nbaBlue-rgb: 2, 83, 165;
   --bs-nbaRed-rgb: 204, 43, 49;
   --bs-pickBlack-rgb: 58, 58, 58;
+  --bs-pickYellow-rgb: 249, 199, 69;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -3083,6 +3085,23 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #3A3A3A;
 }
 
+.btn-pickYellow {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #F9C745;
+  --bs-btn-border-color: #F9C745;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #facf61;
+  --bs-btn-hover-border-color: #facd58;
+  --bs-btn-focus-shadow-rgb: 212, 169, 59;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #fad26a;
+  --bs-btn-active-border-color: #facd58;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #F9C745;
+  --bs-btn-disabled-border-color: #F9C745;
+}
+
 .btn-outline-primary {
   --bs-btn-color: #6f42c1;
   --bs-btn-border-color: #6f42c1;
@@ -3267,6 +3286,23 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #3A3A3A;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #3A3A3A;
+  --bs-gradient: none;
+}
+
+.btn-outline-pickYellow {
+  --bs-btn-color: #F9C745;
+  --bs-btn-border-color: #F9C745;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #F9C745;
+  --bs-btn-hover-border-color: #F9C745;
+  --bs-btn-focus-shadow-rgb: 249, 199, 69;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #F9C745;
+  --bs-btn-active-border-color: #F9C745;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #F9C745;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #F9C745;
   --bs-gradient: none;
 }
 
@@ -4413,6 +4449,14 @@ textarea.form-control-lg {
   height: 1px;
 }
 
+.custom_img_after:hover {
+  opacity: 100%;
+}
+
+.custom_img_befor:hover {
+  opacity: 100%;
+}
+
 .card {
   --bs-card-spacer-y: 1rem;
   --bs-card-spacer-x: 1rem;
@@ -5019,6 +5063,15 @@ textarea.form-control-lg {
   color: #1c1c1c;
 }
 
+.alert-pickYellow {
+  --bs-alert-color: #64501c;
+  --bs-alert-bg: #fef4da;
+  --bs-alert-border-color: #fdeec7;
+}
+.alert-pickYellow .alert-link {
+  color: #504016;
+}
+
 @-webkit-keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -5471,6 +5524,20 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #232323;
   border-color: #232323;
+}
+
+.list-group-item-pickYellow {
+  color: #64501c;
+  background-color: #fef4da;
+}
+.list-group-item-pickYellow.list-group-item-action:hover, .list-group-item-pickYellow.list-group-item-action:focus {
+  color: #64501c;
+  background-color: #e5dcc4;
+}
+.list-group-item-pickYellow.list-group-item-action.active {
+  color: #fff;
+  background-color: #64501c;
+  border-color: #64501c;
 }
 
 .btn-close {
@@ -7087,6 +7154,11 @@ textarea.form-control-lg {
   background-color: RGBA(58, 58, 58, var(--bs-bg-opacity, 1)) !important;
 }
 
+.text-bg-pickYellow {
+  color: #000 !important;
+  background-color: RGBA(249, 199, 69, var(--bs-bg-opacity, 1)) !important;
+}
+
 .link-primary {
   color: #6f42c1 !important;
 }
@@ -7162,6 +7234,13 @@ textarea.form-control-lg {
 }
 .link-pickBlack:hover, .link-pickBlack:focus {
   color: #2e2e2e !important;
+}
+
+.link-pickYellow {
+  color: #F9C745 !important;
+}
+.link-pickYellow:hover, .link-pickYellow:focus {
+  color: #fad26a !important;
 }
 
 .ratio {
@@ -7667,6 +7746,11 @@ textarea.form-control-lg {
 .border-pickBlack {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-pickBlack-rgb), var(--bs-border-opacity)) !important;
+}
+
+.border-pickYellow {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-pickYellow-rgb), var(--bs-border-opacity)) !important;
 }
 
 .border-white {
@@ -8696,6 +8780,11 @@ textarea.form-control-lg {
   color: rgba(var(--bs-pickBlack-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-pickYellow {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-pickYellow-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-black {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
@@ -8800,6 +8889,11 @@ textarea.form-control-lg {
 .bg-pickBlack {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-pickBlack-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-pickYellow {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-pickYellow-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-black {

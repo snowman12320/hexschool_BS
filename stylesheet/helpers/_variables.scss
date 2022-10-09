@@ -49,6 +49,7 @@ $cyan:    #0dcaf0 !default;
 $nbaBlue: #0253a5;
 $nbaRed:  #cc2b31;
 $pickBlack: #3A3A3A;
+$pickYellow:#F9C745;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -309,7 +310,10 @@ $warning:       red !default;
 $danger:        $red !default;
 $light:         rgb(231, 231, 249) !default;
 $dark:          $gray-900 !default;
+$nbaBlue:    $nbaBlue;
+$nbaRed:    $nbaRed;
 $pickBlack:    $pickBlack;
+$pickYellow:    $pickYellow;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -325,6 +329,7 @@ $theme-colors: (
   "nbaBlue":    $nbaBlue,
   "nbaRed":     $nbaRed,
   "pickBlack":  $pickBlack,
+  "pickYellow": $pickYellow,
 ) !default;
 // scss-docs-end theme-colors-map
 
