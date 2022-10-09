@@ -12,25 +12,37 @@
   <body>
     <div class="container-xxl">
       <!-- 導覽 -->
-      <nav class="navbar navbar-expand-lg bg-nbaBlue text-white navbar-light">
-        <div class="d-flex justify-content-between">
-          <div class="d-flex ms-5">
-            <a class="navbar-brand p-0" href="#"> JerseyTown </a>
-            <h1 class="">JerseyTown</h1>
-            <!-- 漢堡 -->
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <!--  -->
+      <nav
+        class="navbar navbar-expand-lg d-flex justify-content-between align-items-center bg-nbaBlue link-white navbar-light px-3"
+      >
+        <!-- 包品牌 -->
+        <div class="">
+          <div class="d-flex">
+            <div>
+              <a class="navbar-brand" href="#"> JerseyTown </a>
+            </div>
+            <a class="align-self-center text-decoration-none link-dark" href="">
+              <h1 class="fs-3 fw-bold mb-0 ms-n3">JerseyTown</h1>
+            </a>
           </div>
+        </div>
+        <!--包選單 -->
+        <!-- 漢堡 -->
+        <div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <!--  -->
+        <div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -38,21 +50,21 @@
                   class="nav-link link-light active"
                   aria-current="page"
                   href="#"
-                  >首頁</a
+                  >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link link-light" href="#">服務介紹</a>
+                <a class="nav-link link-light" href="#">Service</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link-light" href="#">設計作品</a>
+                <a class="nav-link link-light" href="#">Product</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link-light" href="#">跳蚤市場</a>
+                <a class="nav-link link-light" href="#">SecondHand</a>
               </li>
               <li>
                 <a class="btn btn-nbaRed rounded-pill" type="submit">
-                  專屬球衣
+                  Customized
                 </a>
               </li>
             </ul>
@@ -62,35 +74,29 @@
       <!-- banner -->
       <div class="banner bgs-cover"></div>
       <!-- 募款 -->
-      <div class="container py-4 mt-4">
-        <div class="row justify-content-center flex-md-row-reverse gy-5">
-          <div class="col-md-5 d-flex align-items-center">
-            <div class="money">
-              <p class="money_service">Service</p>
-              <h2 class="money_title">Fundraising jerseys</h2>
-              <p>
-                你紙爸發全家聽，綠間不結縣我究，個毛亮高人。<br />
-                卻高酒死這形易止經我腳家立力還上這可......<br />
-                回男腦回義心便有當會兩水記生這自；<br />
-                演般否前出級就話萬水直無基可住。廣製因，全氣改我？<br />
-              </p>
-              <br />
-              <p>
-                為說過著因識空共十房比面科別工人人變童角力男馬媽手趣。<br />
-                明型大方失，經面事馬，來聲小施大；<br />
-                看地自一適，在書寫賽我在。<br />
-                子帶出麼如就味那解的：最半有手然能勢此精觀山好沒生快我足很麗而變最放，上英灣媽？<br />
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
+      <div class="container">
+        <div class="row justify-content-center row-cols-1 row-cols-lg-2 pt-5">
+          <div class="col">
             <img
-              class="of-cover"
-              height="386"
-              width="448"
+              class="of-cover w100"
+              height="486"
+              width="648"
               src="../nbaWeb/andre-hunter-RPKdvPcYAUo-unsplash.jpg"
               alt="義賣球衣"
             />
+          </div>
+          <div class="col d-flex align-items-center">
+            <div class="money">
+              <p class="money_service">Service</p>
+              <h2 class="money_title">FUNDRAISING</h2>
+              <p>
+                你紙爸發全家聽，綠間不結縣我究，個毛亮高人。<br />
+                卻高酒死這形易止經我腳家立力還上這可......<br />
+                <br />
+                回男腦回義心便有當會兩水記生這自；<br />
+                演般否前出級就話萬水直無基可住。廣製因，全氣改我？<br />
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -149,29 +155,45 @@
           </div>
         </div>
       </div>
+      <div class="text-center mt-5">
+        <a
+          type="button"
+          href=""
+          class="btn btn-outline-nbaBlue rounded-pill me-3"
+          >SEE MORE PRODUCT</a
+        >
+        <a type="button" href="" class="btn btn-nbaRed rounded-pill"
+          >CUSTOMIZED JERSEY</a
+        >
+      </div>
 
-      <!-- Hot SELL -->
-      <div class="new_product text-center my-5">
-        <span>HOT</span>
+      <!-- 銷售排行 -->
+      <div class="top_selling text-center my-5">
+        <span>TOP</span>
         <img
           src="nbaWeb/Lovepik_com-401319703-basketball.png"
           height="100"
-          alt="recentlyLogo"
+          alt="sellLogo"
           class=""
         />
-        <span>RANKINGS</span>
+        <span>SELLING</span>
+        <p class="fs-6 text-pickBlack">
+          which are the top-selling NBA jerseys?
+        </p>
       </div>
-      <div class="row row-cols-1 row-cols-lg-3 g-4">
+      <div class="row row-cols-1 row-cols-lg-3 g-4 rank_card mx-2 mt-5">
         <div class="col">
-          <div class="card">
+          <div class="card position-relative shadow">
             <img
               src="nbaWeb/PNG-images-NBA-Players-41png.png"
-              class="card-img-top of-cover w-100"
+              height="300"
+              class="card-img-top of-none op-top position-absolute mt-n5"
               alt="..."
             />
+            <div class="img_back"></div>
             <div class="card-body">
-              <h5 class="card-title text-center fw-bold">kobe bryant</h5>
-              <p class="card-text overflow-auto fs-6">
+              <h5 class="card-title fw-bold">kobe bryant</h5>
+              <p class="card-text fs-6">
                 Bryant won five NBA championships, was an 18-time All-Star, a
                 15-time member of the All-NBA Team, a 12-time member of the
                 All-Defensive Team, the 2008 NBA Most Valuable Player (MVP), and
@@ -182,11 +204,82 @@
                 75th Anniversary Team in 2021.
               </p>
             </div>
-            <div>
-              <a href="#" class="d-block text-center text-decoration-none border border-secondary1">MORE</a>
+            <div class="">
+              <a
+                href="#"
+                class="d-block text-center text-decoration-none link-pick_black pb-1"
+                >MORE</a
+              >
             </div>
           </div>
         </div>
+        <div class="col">
+          <div class="card position-relative shadow">
+            <img
+              src="nbaWeb/PNG-images-NBA-Players-28png.png"
+              height="300"
+              class="card-img-top of-none op-top position-absolute mt-n5"
+              alt="..."
+            />
+            <div class="img_back"></div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">LeBron James</h5>
+              <p class="card-text fs-6">
+                James has won four NBA championships, four NBA MVP awards, four
+                NBA Finals MVP awards, three All-Star MVP awards, and two
+                Olympic gold medals. James has scored the most points in the
+                playoffs, the second most career points, and has the seventh
+                most career assists.
+              </p>
+            </div>
+            <div class="">
+              <a
+                href="#"
+                class="d-block text-center text-decoration-none link-pick_black pb-1"
+                >MORE</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card position-relative shadow">
+            <img
+              src="nbaWeb/PNG-images-NBA-Players-1png.png"
+              height="300"
+              class="card-img-top of-none op-top position-absolute mt-n5"
+              alt="..."
+            />
+            <div class="img_back"></div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Stephen Curry</h5>
+              <p class="card-text fs-6">
+                Curry won his first league MVP award and led the Warriors to
+                their first championship since 1975. The following season, he
+                became the first player to be elected MVP by a unanimous vote
+                and lead the league in scoring while shooting above 50–40–90.
+                That same year, the Warriors broke the record for the most wins
+                in an NBA season en route to reaching the 2016 NBA Finals, which
+                they lost to the Cleveland Cavaliers in seven games.
+              </p>
+            </div>
+            <div class="">
+              <a
+                href="#"
+                class="d-block text-center text-decoration-none link-pick_black pb-1"
+                >MORE</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sell_more text-center">
+        <a
+          type="button"
+          href=""
+          class="btn btn-outline-nbaBlue rounded-pill my-5"
+          >SEE MORE LISTS</a
+        >
       </div>
     </div>
 

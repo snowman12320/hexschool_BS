@@ -743,7 +743,6 @@ $utilities: map-merge(
         ),
       ),
     // scss-docs-end utils-visibility
-
     //custom
     //  一個值就不用括號
     // 縮寫不要加到屬性
@@ -762,20 +761,33 @@ $utilities: map-merge(
       responsive: true,
       class: bgp,
       values: (
-        center:center center
-        ),
+        center: center center,
+      ),
     ),
     "background-attachment": (
       property: background-attachment,
       class: bga,
-      values:fixed,
-    ),    
+      values: fixed,
+    ),
     "object-fit": (
       property: object-fit,
       class: of,
-      values: cover,
+      values: (
+        cover:cover,
+        contain:contain,
+        fill:fill,
+        none:none,
+      )
     ),
-    
+    "object-position": (
+      property: object-position,
+      class: op,
+      values: (
+        // 定位左右中間 + 顯示上下
+        right:right bottom,
+        top:center top,
+      )
+    )
   ),
   $utilities
 );
