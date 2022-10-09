@@ -46,18 +46,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a
-                  class="nav-link  active"
-                  aria-current="page"
-                  href="#"
-                  >Home</a
-                >
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#">Service</a>
+                <a class="nav-link" href="#">Service</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#">Product</a>
+                <a class="nav-link" href="#">Product</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">SecondHand</a>
@@ -109,7 +104,7 @@
         <span>NEW</span>
         <img
           src="nbaWeb/05284b30a1fda6bcdc09420b5c1e7127.svg"
-          height="100"
+          height="80"
           alt="recentlyLogo"
           class=""
         />
@@ -118,9 +113,14 @@
       <div class="container px-5">
         <div class="row row-cols-2 row-cols-lg-4 g-4">
           <div class="col overflow-hidden">
-            <div class="card w-100">
+            <div class="card w-100 position-relation" data-num="1">
+              <div class="new_product_img">
+                <h6>Player</h6>
+                <h4>Kobe Bryant</h4>
+              </div>
               <img
-                height="300"
+                data-num="1"
+                height="250"
                 class="card-img of-cover"
                 src="nbaWeb/olivier-collet-H7cIqigZOBo-unsplash.jpg"
                 alt="new1"
@@ -128,9 +128,14 @@
             </div>
           </div>
           <div class="col">
-            <div class="card w-100">
+            <div class="card w-100 position-relation" data-num="2">
+              <div class="new_product_img">
+                <h6>Player</h6>
+                <h4>Derrick Rose</h4>
+              </div>
               <img
-                height="300"
+                data-num="2"
+                height="250"
                 class="card-img of-cover"
                 src="nbaWeb/eddy-lackmann-6MmfmBJd8PE-unsplash.jpg"
                 alt="new2"
@@ -138,9 +143,14 @@
             </div>
           </div>
           <div class="col">
-            <div class="card w-100">
+            <div class="card w-100 position-relation" data-num="3">
+              <div class="new_product_img">
+                <h6>Player</h6>
+                <h4>Kevin Durant</h4>
+              </div>
               <img
-                height="300"
+                data-num="3"
+                height="250"
                 class="card-img of-cover"
                 src="nbaWeb/mingxuan_leng-EXqK7oqvKhQ-unsplash.jpg"
                 alt="new3"
@@ -148,9 +158,14 @@
             </div>
           </div>
           <div class="col">
-            <div class="card w-100">
+            <div class="card w-100 position-relation" data-num="4">
+              <div class="new_product_img">
+                <h6>Player</h6>
+                <h4>Stephen Curry</h4>
+              </div>
               <img
-                height="300"
+                data-num="4"
+                height="250"
                 class="card-img of-cover"
                 src="nbaWeb/tyler-martoia-nVpT1jeu3f0-unsplash.jpg"
                 alt="new4"
@@ -176,7 +191,7 @@
         <span>TOP</span>
         <img
           src="nbaWeb/Lovepik_com-401319703-basketball.png"
-          height="100"
+          height="80"
           alt="sellLogo"
           class=""
         />
@@ -189,6 +204,8 @@
         <div class="col mb-5 mb-lg-0">
           <div class="card position-relative shadow">
             <img
+              onmouseover="hover_rank(this);"
+              onmouseout="unhover_rank(this);"
               src="nbaWeb/PNG-images-NBA-Players-41png.png"
               height="300"
               class="card-img-top of-none op-top position-absolute mt-n5"
@@ -211,7 +228,7 @@
             <div class="sell_more">
               <a
                 href="#"
-                class="d-block text-center text-decoration-none link-pick_black pb-1"
+                class="d-block text-center text-decoration-none link-pick_black pb-2"
                 >MORE</a
               >
             </div>
@@ -239,7 +256,7 @@
             <div class="sell_more">
               <a
                 href="#"
-                class="d-block text-center text-decoration-none link-pick_black pb-1"
+                class="d-block text-center text-decoration-none link-pick_black pb-2"
                 >MORE</a
               >
             </div>
@@ -269,7 +286,7 @@
             <div class="sell_more">
               <a
                 href="#"
-                class="d-block text-center text-decoration-none link-pick_black pb-1"
+                class="d-block text-center text-decoration-none link-pick_black pb-2"
                 >MORE</a
               >
             </div>
@@ -277,7 +294,9 @@
         </div>
       </div>
 
-      <div class="sell_more text-center bolder-pickYellow border-bottom border-3">
+      <div
+        class="sell_more text-center bolder-pickYellow border-bottom border-3"
+      >
         <a
           type="button"
           href=""
@@ -286,9 +305,9 @@
         >
       </div>
       <!-- 徵才 -->
-      <div class="container-lg ">
+      <div class="container-lg">
         <div
-          class="row row-cols-1 row-cols-lg-2 d-flex justify-content-center align-items-center mb-5 mx-5 mt-5 "
+          class="row row-cols-1 row-cols-lg-2 d-flex justify-content-center align-items-center mb-5 mx-5 mt-5"
         >
           <div class="col d-flex justify-content-center mb-5 mb-lg-0 mx-lg-0">
             <img
@@ -322,17 +341,33 @@
           </div>
         </div>
       </div>
-
+      <!-- 小圖示 -->
       <div class="position-relation">
-        <img src="./nbaWeb/silhouette-basket-01.svg" alt="" height="100" width="100" class="custom_img_after position-fixed bottom-0 end-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
-        <img src="./nbaWeb/1652102106slam-dunk-silhouette-basketball.svg" alt="" height="100" width="100" class="custom_img_befor position-fixed bottom-0 end-0 opacity-0.1">
+        <a href="#">
+          <img
+            onmouseover="hover_custom(this);"
+            onmouseout="unhover_custom(this);"
+            src="./nbaWeb/silhouette-basket-01.svg"
+            alt=""
+            height="80"
+            width="100"
+            class="custom_img_after position-fixed bottom-0 end-0"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="Let's customized jersey now !"
+          />
+        </a>
       </div>
 
       <div class="footer bg-pickBlack text-center text-white py-2 pt-4">
         <p>Copyright © 2022 JerseyTown.All rights reserved.</p>
       </div>
     </div>
-
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
