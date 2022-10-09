@@ -2,7 +2,7 @@
 @import "../helpers/variables";
 
 * {
-  font: normal normal 24px/39px Kalam;
+  font: normal normal  Kalam;
 }
 
 .navbar {
@@ -15,12 +15,7 @@
     background-color: #fff;
   }
   h1 {
-    // font: normal normal bold 24px/39px Kalam;
-  }
-}
-.nav-link {
-  &:hover {
-    color: $nbaRed;
+    // font: normal normal 24px/39px Kalam;
   }
 }
 
@@ -54,6 +49,10 @@
     font: normal normal bold 24px/39px Kalam;
   }
 }
+.sell_more a:hover {
+  font-weight: bold;
+}
+
 .rank_card {
   .img_back {
     width: 100%;

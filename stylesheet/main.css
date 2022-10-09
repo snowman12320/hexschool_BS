@@ -70,7 +70,7 @@
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
   --bs-link-color: #6f42c1;
-  --bs-link-hover-color: #59359a;
+  --bs-link-hover-color: #cc2b31;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -3800,7 +3800,7 @@ textarea.form-control-lg {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: var(--bs-link-color);
+  --bs-nav-link-color: white;
   --bs-nav-link-hover-color: #cc2b31;
   --bs-nav-link-disabled-color: #6c757d;
   display: flex;
@@ -4341,7 +4341,7 @@ textarea.form-control-lg {
 }
 
 * {
-  font: normal normal 24px/39px Kalam;
+  font: normal normal Kalam;
 }
 
 .navbar .navbar-brand {
@@ -4360,10 +4360,6 @@ textarea.form-control-lg {
   border-radius: 50%;
   background-color: #fff;
 }
-.nav-link:hover {
-  color: #cc2b31;
-}
-
 .banner {
   background-image: url(../../nbaWeb/abhay-siby-mathew-LmEuUMbd5Rw-unsplash.jpg);
   width: 100%;
@@ -4387,6 +4383,10 @@ textarea.form-control-lg {
 .top_selling span {
   color: #cc2b31;
   font: normal normal bold 24px/39px Kalam;
+}
+
+.sell_more a:hover {
+  font-weight: bold;
 }
 
 .rank_card .img_back {
