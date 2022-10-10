@@ -46,7 +46,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item ">
-                <a class="nav-link p-3 active" aria-current="page" href="home.html">Home</a>
+                <a class="nav-link p-3 active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link p-3 " href="#Service">Service</a>
@@ -68,54 +68,101 @@
           </div>
         </div>
       </nav>
-      <!-- banner -->
-      <div  class="allstar_banner bgs-cover"></div>
-      <!-- allstar -->
-      <div class="row row-cols-1 row-cols-xl-5 mx-5 my-5 g-3">
-        <div class="col d-flex flex-column  align-items-center ">
-          <div class="allstar_bg  d-flex justify-content-center align-items-center">
-            <img class=" of-contain " src="./nbaWeb/PNG-images-NBA-Players-36png.png" height="200" width="200" alt=""> 
-          </div>
-          <p class="text-pickYellow">NO.1</p>
-          <h3>KOBE BRYANT</h3>
-          <p>BLACK MAMBA</p>
-        </div>
-        <div class="col d-flex flex-column  align-items-center ">
-          <div class="allstar_bg  d-flex justify-content-center align-items-center">
-            <img class=" of-contain " src="./nbaWeb/PNG-images-NBA-Players-3png.png" height="200" width="200" alt=""> 
-          </div>
-          <p class="text-pickYellow">NO.2</p>
-          <h3>LEBRON JAMES</h3>
-          <p>KING JAMES</p>
-        </div>
-        <div class="col d-flex flex-column  align-items-center ">
-          <div class="allstar_bg  d-flex justify-content-center align-items-center">
-            <img class=" of-cover op-top" src="./nbaWeb/PNG-images-NBA-Players-1png.png" height="200" width="200" alt=""> 
-          </div>
-          <p class="text-pickYellow">NO.3</p>
-          <h3>STEPHEN CURRY</h3>
-          <p>LOGOSHOOT GOD</p>
-        </div>
-        <div class="col d-flex flex-column  align-items-center ">
-          <div class="allstar_bg  d-flex justify-content-center align-items-center">
-            <img class=" of-cover op-top " src="./nbaWeb/PNG-images-NBA-Players-58png.png" height="200" width="200" alt=""> 
-          </div>
-          <p class="text-pickYellow">NO.4</p>
-          <h3 class="text-center">RUSSELL <br> WESTBROOK</h3>
-          <p>TRIPLE-DOUBLES GOD</p>
-        </div>
-        <div class="col d-flex flex-column  align-items-center ">
-          <div class="allstar_bg  d-flex justify-content-center align-items-center">
-            <img class=" of-cover op-top " src="./nbaWeb/PNG-images-NBA-Players-60png.png" height="200" width="200" alt=""> 
-          </div>
-          <p class="text-pickYellow">NO.5</p>
-          <h3>KRIE IRVING</h3>
-          <p>DRIBBLE GOD</p>
+      <!-- 最新球衣 -->
+      <div id="Product" class="new_product text-center my-5">
+        <span>NEW</span>
+        <img
+          src="nbaWeb/05284b30a1fda6bcdc09420b5c1e7127.svg"
+          height="80"
+          alt="recentlyLogo"
+          class=""
+        />
+        <span>PRODUCTS</span>
+      </div>
+      <div class="container px-5">
+        <div class="row row-cols-1 row-cols-lg-12 ">
+          <!-- 側欄 -->
+          <!-- 上面row響應 下面col也要響應~~~ -->
+            <div class="col col-lg-3 lh-lg aside">
+              <h3 class="">Player</h3>
+              <ul class="list-unstyled d-flex justify-content-around mx-5 my-3" >
+                <li><a class="text-decoration-none d-block" href="#"> All</a></li>
+                <li><a class="text-decoration-none d-block" href="#"> Kobe</a></li>
+                <li><a class="text-decoration-none d-block" href="#"> Rose</a></li>
+                <li><a class="text-decoration-none d-block" href="#"> Durant</a></li>
+                <li><a class="text-decoration-none d-block" href="#"> James</a></li>
+              </ul>
+            </div>
+          <!-- 產品圖 -->
+            <div class="col col-lg-9">
+              <div class="row row-cols-2 row-cols-lg-3 g-4">
+                <div class="col overflow-hidden">
+                  <div class="card w-100 position-relation" data-num="1">
+                    <div class="new_product_img">
+                      <h6 >Player</h6>
+                      <h4>Kobe Bryant</h4>
+                    </div>
+                    <img
+                      data-num="1"
+                      height="250"
+                      class="card-img of-cover"
+                      src="nbaWeb/olivier-collet-H7cIqigZOBo-unsplash.jpg"
+                      alt="new1"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card w-100 position-relation" data-num="2">
+                    <div class="new_product_img">
+                      <h6>Player</h6>
+                      <h4>Derrick Rose</h4>
+                    </div>
+                    <img
+                      data-num="2"
+                      height="250"
+                      class="card-img of-cover"
+                      src="nbaWeb/eddy-lackmann-6MmfmBJd8PE-unsplash.jpg"
+                      alt="new2"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card w-100 position-relation" data-num="3">
+                    <div class="new_product_img">
+                      <h6>Player</h6>
+                      <h4>Kevin Durant</h4>
+                    </div>
+                    <img
+                      data-num="3"
+                      height="250"
+                      class="card-img of-cover"
+                      src="nbaWeb/mingxuan_leng-EXqK7oqvKhQ-unsplash.jpg"
+                      alt="new3"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card w-100 position-relation" data-num="4">
+                    <div class="new_product_img">
+                      <h6>Player</h6>
+                      <h4>Stephen Curry</h4>
+                    </div>
+                    <img
+                      data-num="4"
+                      height="250"
+                      class="card-img of-cover"
+                      src="nbaWeb/tyler-martoia-nVpT1jeu3f0-unsplash.jpg"
+                      alt="new4"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
 
       <!-- 徵才 -->
-      <div class="container-lg border-nbaRed border-top border-3">
+      <div class="container-lg border-top border-nbaRed  border-3 mt-5">
         <div
           class="row row-cols-1 row-cols-lg-2 d-flex justify-content-center align-items-center mb-5 mx-5 mt-5"
         >

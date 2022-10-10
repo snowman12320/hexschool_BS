@@ -5,14 +5,26 @@
     background-color: $background;
 }
 
+// max
 @mixin pad() {
   @media (max-width: 768px) {
-    @content
+    @content;
+  }
+}
+@mixin pc() {
+  @media (max-width: 1040px) {
+    @content;
   }
 }
 
-@mixin pc() {
-  @media (max-width: 1040px) {
-    @content
+// min
+@mixin minipad() {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin minipc() {
+  @media (min-width: 1040px) {
+    @content;
   }
 }
