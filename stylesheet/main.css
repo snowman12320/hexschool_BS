@@ -4380,6 +4380,9 @@ textarea.form-control-lg {
   font: normal normal Kalam;
 }
 
+.navbar {
+  /* Grow Shadow */
+}
 .navbar .navbar-brand {
   /* 圖片裝入容器 */
   background-image: url(../../nbaWeb/1588928235basketball-fire-logo-silhouette-freesvg.org.svg);
@@ -4396,6 +4399,34 @@ textarea.form-control-lg {
   border-radius: 50%;
   background-color: #fff;
 }
+.navbar h1, .navbar .h1 {
+  color: #fff;
+}
+.navbar h1:hover, .navbar .h1:hover {
+  color: #cc2b31;
+}
+.navbar .navbar-nav a {
+  color: #fff;
+  font-weight: bold;
+}
+.navbar .navbar-nav a:hover {
+  color: #cc2b31;
+}
+.navbar .hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: box-shadow, transform;
+}
+.navbar .hvr-grow-shadow:hover,
+.navbar .hvr-grow-shadow:focus,
+.navbar .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+
 .banner {
   background-image: url(../../nbaWeb/abhay-siby-mathew-LmEuUMbd5Rw-unsplash.jpg);
   width: 100%;
@@ -4446,16 +4477,33 @@ textarea.form-control-lg {
   font-weight: bold;
 }
 
+.rank_card .card:hover {
+  box-shadow: 0 50px 50px -10px rgba(0, 0, 0, 0.5);
+}
 .rank_card .img_back {
   width: 100%;
   height: 250px;
   background-color: #fff;
-  border-radius: 10%;
+  border-radius: 5%;
 }
-.rank_card .card-img-top:hover {
+.rank_card .hover_img.img_back001 {
   background-image: url(../../nbaWeb/olivier-collet-H7cIqigZOBo-unsplash.jpg);
-  width: 100%;
-  height: 250px;
+  background-position: center center;
+  background-size: cover;
+}
+.rank_card .hover_img.img_back002 {
+  background-image: url(../../nbaWeb/PNG-images-NBA-Players-3png.png);
+  background-position: center center;
+  background-size: none;
+  background-repeat: no-repeat;
+}
+.rank_card .hover_img.img_back003 {
+  background-image: url(../../nbaWeb/tyler-martoia-nVpT1jeu3f0-unsplash.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.rank_card .hover_img.card-img-top {
+  display: none;
 }
 .rank_card .card-text {
   white-space: nowrap; /*段落不自動換行*/
@@ -9066,6 +9114,10 @@ textarea.form-control-lg {
   background-position: center center !important;
 }
 
+.bgp-bottom {
+  background-position: center bottom !important;
+}
+
 .bga-fixed {
   background-attachment: fixed !important;
 }
@@ -9713,6 +9765,9 @@ textarea.form-control-lg {
   .bgp-sm-center {
     background-position: center center !important;
   }
+  .bgp-sm-bottom {
+    background-position: center bottom !important;
+  }
 }
 @media (min-width: 768px) {
   .float-md-start {
@@ -10326,6 +10381,9 @@ textarea.form-control-lg {
   }
   .bgp-md-center {
     background-position: center center !important;
+  }
+  .bgp-md-bottom {
+    background-position: center bottom !important;
   }
 }
 @media (min-width: 992px) {
@@ -10941,6 +10999,9 @@ textarea.form-control-lg {
   .bgp-lg-center {
     background-position: center center !important;
   }
+  .bgp-lg-bottom {
+    background-position: center bottom !important;
+  }
 }
 @media (min-width: 1200px) {
   .float-xl-start {
@@ -11555,6 +11616,9 @@ textarea.form-control-lg {
   .bgp-xl-center {
     background-position: center center !important;
   }
+  .bgp-xl-bottom {
+    background-position: center bottom !important;
+  }
 }
 @media (min-width: 1400px) {
   .float-xxl-start {
@@ -12168,6 +12232,9 @@ textarea.form-control-lg {
   }
   .bgp-xxl-center {
     background-position: center center !important;
+  }
+  .bgp-xxl-bottom {
+    background-position: center bottom !important;
   }
 }
 @media (min-width: 1200px) {

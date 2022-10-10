@@ -17,18 +17,18 @@
       >
         <!-- 包品牌 -->
         <div class="d-flex justify-content-between align-items-center">
-          <div class="d-flex">
+          <div class="d-flex ">
             <div>
               <a class="navbar-brand" href="#"> JerseyTown </a>
             </div>
-            <a class="align-self-center text-decoration-none link-dark" href="">
-              <h1 class="fs-3 fw-bold mb-0 ms-n3">JerseyTown</h1>
+            <a class="align-self-center text-decoration-none" href="">
+              <h1 class="fs-3 fw-bold mb-0 ms-n2 ">JTown</h1>
             </a>
           </div>
           <!-- 漢堡 -->
-          <div>
+          <div class="ms-3">
             <button
-              class="navbar-toggler"
+              class="navbar-toggler "
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -36,7 +36,7 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon "></span>
             </button>
           </div>
           <!--  -->
@@ -45,20 +45,20 @@
         <div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <li class="nav-item ">
+                <a class="nav-link p-3 active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Service</a>
+                <a class="nav-link p-3 " href="#Service">Service</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Product</a>
+                <a class="nav-link p-3" href="#Product">Product</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">SecondHand</a>
+                <a class="nav-link p-3" href="#Rank">Ranking</a>
               </li>
-              <li>
-                <a class="btn btn-nbaRed rounded-pill" type="submit">
+              <li class="hvr-grow-shadow ">
+                <a class="btn btn-nbaRed rounded-pill text-white p-3" type="submit">
                   Customized
                 </a>
               </li>
@@ -67,9 +67,9 @@
         </div>
       </nav>
       <!-- banner -->
-      <div class="banner bgs-cover"></div>
+      <div  class="banner bgs-cover"></div>
       <!-- 募款 -->
-      <div
+      <div id="Service"
         class="row d-flex justify-content-center row-cols-1 row-cols-lg-2 pt-5 mx-5 px-5 g-0"
       >
         <div class="col">
@@ -100,7 +100,7 @@
         </div>
       </div>
       <!-- 最新球衣 -->
-      <div class="new_product text-center my-5">
+      <div id="Product" class="new_product text-center my-5">
         <span>NEW</span>
         <img
           src="nbaWeb/05284b30a1fda6bcdc09420b5c1e7127.svg"
@@ -115,7 +115,7 @@
           <div class="col overflow-hidden">
             <div class="card w-100 position-relation" data-num="1">
               <div class="new_product_img">
-                <h6>Player</h6>
+                <h6 >Player</h6>
                 <h4>Kobe Bryant</h4>
               </div>
               <img
@@ -187,7 +187,7 @@
       </div>
 
       <!-- 銷售排行 -->
-      <div class="top_selling text-center my-5">
+      <div id="Ranking" class="top_selling text-center my-5">
         <span>TOP</span>
         <img
           src="nbaWeb/Lovepik_com-401319703-basketball.png"
@@ -204,14 +204,13 @@
         <div class="col mb-5 mb-lg-0">
           <div class="card position-relative shadow">
             <img
-              onmouseover="hover_rank(this);"
-              onmouseout="unhover_rank(this);"
+              data-num="001"
               src="nbaWeb/PNG-images-NBA-Players-41png.png"
               height="300"
               class="card-img-top of-none op-top position-absolute mt-n5"
               alt="..."
             />
-            <div class="img_back"></div>
+            <div data-num="001" class="img_back img_back001"></div>
             <div class="card-body">
               <h5 class="card-title fw-bold">kobe bryant</h5>
               <p class="card-text fs-6">
@@ -237,12 +236,13 @@
         <div class="col mb-5 mb-lg-0">
           <div class="card position-relative shadow">
             <img
+            data-num="002"
               src="nbaWeb/PNG-images-NBA-Players-28png.png"
               height="300"
               class="card-img-top of-none op-top position-absolute mt-n5"
               alt="..."
             />
-            <div class="img_back"></div>
+            <div data-num="002" class="img_back img_back002"></div>
             <div class="card-body">
               <h5 class="card-title fw-bold">LeBron James</h5>
               <p class="card-text fs-6">
@@ -256,7 +256,7 @@
             <div class="sell_more">
               <a
                 href="#"
-                class="d-block text-center text-decoration-none link-pick_black pb-2"
+                class="d-block text-center text-decoration-none link-pick_black pb-2 stretched-link"
                 >MORE</a
               >
             </div>
@@ -265,12 +265,13 @@
         <div class="col mb-5 mb-lg-0">
           <div class="card position-relative shadow">
             <img
+            data-num="003"
               src="nbaWeb/PNG-images-NBA-Players-1png.png"
               height="300"
               class="card-img-top of-none op-top position-absolute mt-n5"
               alt="..."
             />
-            <div class="img_back"></div>
+            <div data-num="003" class="img_back img_back003"></div>
             <div class="card-body">
               <h5 class="card-title fw-bold">Stephen Curry</h5>
               <p class="card-text fs-6">
@@ -295,7 +296,7 @@
       </div>
 
       <div
-        class="sell_more text-center bolder-pickYellow border-bottom border-3"
+        class="sell_more text-center border-nbaRed border-bottom border-3"
       >
         <a
           type="button"
@@ -313,13 +314,13 @@
             <img
               class=""
               height="130"
-              src="nbaWeb/05284b30a1fda6bcdc09420b5c1e7127.svg"
+              src="nbaWeb/1506074059.svg"
               alt=""
             />
             <div class="">
               <h3>JOIN TEAM</h3>
               <p>jersey fundraising</p>
-              <a href="" class="btn btn-outline-pickBlack rounded-pill"
+              <a href="" class="btn btn-outline-nbaBlue rounded-pill"
                 >SEND MESSAGE</a
               >
             </div>
@@ -334,7 +335,7 @@
             <div class="">
               <h3>JOIN TEAM</h3>
               <p>customized jersey</p>
-              <a href="" class="btn btn-outline-pickBlack rounded-pill"
+              <a href="" class="btn btn-outline-nbaBlue rounded-pill"
                 >SEND MESSAGE</a
               >
             </div>
@@ -354,12 +355,12 @@
             class="custom_img_after position-fixed bottom-0 end-0"
             data-bs-toggle="tooltip"
             data-bs-placement="top"
-            title="Let's customized jersey now !"
+            title="Let's customized jersey !"
           />
         </a>
       </div>
 
-      <div class="footer bg-pickBlack text-center text-white py-2 pt-4">
+      <div class="footer bg-nbaRed text-center text-white py-2 pt-4">
         <p>Copyright © 2022 JerseyTown.All rights reserved.</p>
       </div>
     </div>
