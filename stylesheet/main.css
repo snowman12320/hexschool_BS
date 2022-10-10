@@ -12196,6 +12196,10 @@ textarea.form-control-lg {
   height: 400px;
 }
 
+.money_img {
+  max-width: 548px;
+}
+
 .money .money_service {
   font: normal normal bold 24px/39px Kalam;
   color: #f9c745;
