@@ -12,33 +12,39 @@
   <body>
     <div class="container-xxl">
       <!-- 導覽 -->
-      <nav class="navbar navbar-expand-md navbar-light bg-light bg-nbaBlue">
-        <div class="container-fluid d-flex justify-content-between">
+      <nav
+        class="navbar navbar-expand-lg d-flex justify-content-between align-items-center bg-nbaBlue link-white navbar-light px-3"
+      >
+        <!-- 包品牌 -->
+        <div class="d-flex justify-content-between align-items-center">
           <div class="d-flex">
-            <a class="navbar-brand" href="#">JerseyTown</a>
-            <a class="align-self-center text-decoration-none" href="home.html">
+            <div>
+              <a class="navbar-brand" href="#"> JerseyTown </a>
+            </div>
+            <a class="align-self-center text-decoration-none" href="">
               <h1 class="fs-3 fw-bold mb-0 ms-n2">JTown</h1>
             </a>
           </div>
           <!-- 漢堡 -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <div class="ms-3">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
           <!--  -->
-          <div
-            class="collapse navbar-collapse mb-3 mb-md-0"
-            id="navbarSupportedContent"
-          >
-            <!-- margin-start 自動推到底 好用排版方式 -->
-            <ul class="navbar-nav ms-auto text-center">
+        </div>
+        <!--包選單 -->
+        <div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
               <li class="nav-item">
                 <a
                   class="nav-link p-3 active"
@@ -61,7 +67,7 @@
                   class="learn-more btn btn-nbaRed rounded-pill text-white p-2 mt-lg-2 bg-nbaRed disable"
                 >
                   <a
-                    class="text-decoration-none text-white fs-6"
+                    class="text-decoration-none text-white"
                     type="submit"
                     href="home.html"
                   >
@@ -73,156 +79,26 @@
           </div>
         </div>
       </nav>
-      <!-- banner -->
-      <div class="banner bgs-cover"></div>
-      <!-- 募款 -->
-      <!-- row 都加 flex-row 比較清楚~~~ -->
-      <div
-        id="Service"
-        class="flex-lg-row flex-column-reverse d-flex justify-content-center align-items-center row-cols-1 row-cols-md-2 pt-5 mx-md-5 px-md-5 mx-1 px-1 g-5"
-      >
-        <div
-          class="col d-flex align-items-center justify-content-center me-md-5"
-        >
-          <img
-            class="of-cover money_img w-100"
-            height="486"
-            width="648"
-            src="../nbaWeb/andre-hunter-RPKdvPcYAUo-unsplash.jpg"
-            alt="義賣球衣"
-          />
-        </div>
-        <div class="col" style="max-width: 380px">
-          <div class="money w-100">
-            <p class="fs-4 text-pickYellow">Service</p>
-            <h2 class="text-nbaBlue">EVERYBODY FUNDRAISING</h2>
-            <p class="fs-6">
-              The Association of Jersey Charities exists to provide guidance to
-              and be a source of funding for its members. <br />
-              <br />
-              Registered Jersey <br />
-              charities and other charities registered as charities under the
-              law of the United Kingdom, <br />
-              on the basis the charity carries out <br />
-              substantial charity activities in or from within Jersey
-              <br />
-              welcome to apply to be members. <br />
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- 最新球衣 -->
-      <div
-        id="Product"
-        class="my-5 d-flex justify-content-center align-items-center text-nbaRed"
-      >
-        <h2>NEW</h2>
-        <img
-          src="nbaWeb/05284b30a1fda6bcdc09420b5c1e7127.svg"
-          height="80"
-          alt="recentlyLogo"
-          class=""
-        />
-        <h2>PRODUCTS</h2>
-      </div>
-      <div class="row row-cols-2 row-cols-lg-4 g-4 px-3">
-        <div class="col overflow-hidden">
-          <div class="card w-100 position-relation" data-num="1">
-            <div class="new_product_img">
-              <h6>Player</h6>
-              <h4>Kobe Bryant</h4>
-            </div>
-            <img
-              data-num="1"
-              height="312"
-              width="312"
-              class="card-img of-cover"
-              src="nbaWeb/olivier-collet-H7cIqigZOBo-unsplash.jpg"
-              alt="new1"
-            />
-          </div>
-        </div>
-        <div class="col">
-          <div class="card w-100 position-relation" data-num="2">
-            <div class="new_product_img">
-              <h6>Player</h6>
-              <h4>Derrick Rose</h4>
-            </div>
-            <img
-              data-num="2"
-              height="312"
-              width="312"
-              class="card-img of-cover"
-              src="nbaWeb/eddy-lackmann-6MmfmBJd8PE-unsplash.jpg"
-              alt="new2"
-            />
-          </div>
-        </div>
-        <div class="col">
-          <div class="card w-100 position-relation" data-num="3">
-            <div class="new_product_img">
-              <h6>Player</h6>
-              <h4>Kevin Durant</h4>
-            </div>
-            <img
-              data-num="3"
-              height="312"
-              width="312"
-              class="card-img of-cover"
-              src="nbaWeb/mingxuan_leng-EXqK7oqvKhQ-unsplash.jpg"
-              alt="new3"
-            />
-          </div>
-        </div>
-        <div class="col">
-          <div class="card w-100 position-relation" data-num="4">
-            <div class="new_product_img">
-              <h6>Player</h6>
-              <h4>Stephen Curry</h4>
-            </div>
-            <img
-              data-num="4"
-              height="312"
-              width="312"
-              class="card-img of-cover"
-              src="nbaWeb/tyler-martoia-nVpT1jeu3f0-unsplash.jpg"
-              alt="new4"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="text-center mt-4">
-        <a
-          type="button"
-          href=""
-          class="btn btn-outline-nbaBlue rounded-pill fs-5 me-md-3 me-0 mb-3 mb-md-0"
-          >SEE MORE PRODUCT</a
-        >
-        <a type="button" href="" class="btn btn-nbaRed rounded-pill fs-5"
-          >CUSTOMIZED JERSEY</a
-        >
-      </div>
 
       <!-- 銷售排行 -->
       <div
         id="Ranking"
         class="d-flex justify-content-center align-items-center text-nbaRed mt-5"
       >
-        <h2>TOP</h2>
+        <h2>PLAYER</h2>
         <img
           src="nbaWeb/Lovepik_com-401319703-basketball.png"
           height="80"
           alt="sellLogo"
           class=""
         />
-        <h2>SELLING</h2>
+        <h2>STORY</h2>
       </div>
-      <p class="fs-6 text-pickBlack text-center mb-5">
-        which are the top-selling NBA jerseys?
+      <p class="fs-6 text-pickBlack text-center mb-3">
+        how to become the NBA all star player?
       </p>
-      <div class="row row-cols-1 row-cols-lg-3 g-4 rank_card mx-2 mt-5">
-        <div class="col mb-5 mb-lg-0">
+      <div class="row row-cols-1 row-cols-lg-3 rank_card mx-2">
+        <div class="col mb-5 mt-7 mb-lg-0">
           <div class="card position-relative shadow" style="height: 424px">
             <img
               data-num="001"
@@ -254,7 +130,7 @@
             </div>
           </div>
         </div>
-        <div class="col mb-5 mb-lg-0">
+        <div class="col mb-5 mt-7 mb-lg-0">
           <div class="card position-relative shadow" style="height: 424px">
             <img
               data-num="002"
@@ -283,7 +159,7 @@
             </div>
           </div>
         </div>
-        <div class="col mb-5 mb-lg-0">
+        <div class="col mb-5 mt-7 mb-lg-0">
           <div class="card position-relative shadow" style="height: 424px">
             <img
               data-num="003"
@@ -314,15 +190,113 @@
             </div>
           </div>
         </div>
+        <div class="col mb-5 mt-7 mb-lg-0">
+          <div class="card position-relative shadow" style="height: 424px">
+            <img
+              data-num="004"
+              src="nbaWeb/PNG-images-NBA-Players-58png.png"
+              height="300"
+              class="card-img-top of-none op-top position-absolute mt-n5"
+              alt="..."
+            />
+            <div data-num="004" class="img_back img_back004"></div>
+            <div class="card-body">
+              <h3 class="card-title fw-bold fs-6">Russlue Westbrook</h3>
+              <p class="card-text fs-6">
+                Westbrook won his first league MVP award and led the Warriors to
+                their first championship since 1975. The following season, he
+                became the first player to be elected MVP by a unanimous vote
+                and lead the league in scoring while shooting above 50–40–90.
+                That same year, the Warriors broke the record for the most wins
+                in an NBA season en route to reaching the 2016 NBA Finals, which
+                they lost to the Cleveland Cavaliers in seven games.
+              </p>
+            </div>
+            <div class="sell_more">
+              <a
+                href="#"
+                class="d-block text-center text-decoration-none link-pick_black pb-2 fs-6"
+                >MORE</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5 mt-7 mb-lg-0">
+          <div class="card position-relative shadow" style="height: 424px">
+            <img
+              data-num="005"
+              src="nbaWeb/PNG-images-NBA-Players-60png.png"
+              height="300"
+              class="card-img-top of-none op-top position-absolute mt-n5"
+              alt="..."
+            />
+            <div data-num="005" class="img_back img_back005"></div>
+            <div class="card-body">
+              <h3 class="card-title fw-bold fs-6">Krie Irving</h3>
+              <p class="card-text fs-6">
+                Irving won his first league MVP award and led the Warriors to
+                their first championship since 1975. The following season, he
+                became the first player to be elected MVP by a unanimous vote
+                and lead the league in scoring while shooting above 50–40–90.
+                That same year, the Warriors broke the record for the most wins
+                in an NBA season en route to reaching the 2016 NBA Finals, which
+                they lost to the Cleveland Cavaliers in seven games.
+              </p>
+            </div>
+            <div class="sell_more">
+              <a
+                href="#"
+                class="d-block text-center text-decoration-none link-pick_black pb-2 fs-6"
+                >MORE</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5 mt-7 mb-lg-0">
+          <div class="card position-relative shadow" style="height: 424px">
+            <img
+              data-num="006"
+              src="nbaWeb/PNG-images-NBA-Players-70png.png"
+              height="300"
+              class="card-img-top of-none op-top position-absolute mt-n5"
+              alt="..."
+            />
+            <div data-num="006" class="img_back img_back006"></div>
+            <div class="card-body">
+              <h3 class="card-title fw-bold fs-6">John Wall</h3>
+              <p class="card-text fs-6">
+                Wall won his first league MVP award and led the Warriors to
+                their first championship since 1975. The following season, he
+                became the first player to be elected MVP by a unanimous vote
+                and lead the league in scoring while shooting above 50–40–90.
+                That same year, the Warriors broke the record for the most wins
+                in an NBA season en route to reaching the 2016 NBA Finals, which
+                they lost to the Cleveland Cavaliers in seven games.
+              </p>
+            </div>
+            <div class="sell_more">
+              <a
+                href="#"
+                class="d-block text-center text-decoration-none link-pick_black pb-2 fs-6"
+                >MORE</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="sell_more text-center">
-        <a
-          type="button"
-          href="allstar.html"
-          class="btn btn-outline-nbaBlue rounded-pill my-5 fs-5"
-          >SEE MORE LISTS</a
-        >
+      <!-- 分頁 -->
+      <!-- nav 不加class / 分頁有內建d-flex -->
+      <div class="pagination p1 justify-content-center my-5">
+        <ul class="">
+          <a href="#"><li><</li></a>
+          <a class="is-active" href="#"><li>1</li></a>
+          <a href="#"><li>2</li></a>
+          <a href="#"><li>3</li></a>
+          <a href="#"><li>4</li></a>
+          <a href="#"><li>5</li></a>
+          <a href="#"><li>></li></a>
+        </ul>
       </div>
       <!-- 徵才 -->
       <div class="container-lg border-nbaRed border-top border-3">

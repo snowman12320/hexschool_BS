@@ -31,14 +31,14 @@ $(document).ready(function () {
 
 //排行圖
 $(document).ready(function () {
-  $(".card-img-top").hover(function (e) {
+  $(".card-img-top").mouseenter(function (e) {
     var choose = e.target.dataset.num;
-    $("body [data-num=" + choose + "]").toggleClass("hover_img");
+    $("body [data-num=" + choose + "]").addClass("hover_img");
   });
-  // $(".card-img-top").mouseout(function (e) {
-  //   var choose = e.target.dataset.num;
-  //   $("body [data-num=" + choose + "]").removeClass("hover_img");
-  // });
+  $(".card-img-top").mouseleave(function (e) {
+    var choose = e.target.dataset.num;
+    $("body [data-num=" + choose + "]").removeClass("hover_img");
+  });
 });
 
 //註冊驗證
