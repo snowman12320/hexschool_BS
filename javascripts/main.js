@@ -13,7 +13,7 @@ function hover_custom(element) {
   );
 }
 function unhover_custom(element) {
-  element.setAttribute("src", `./nbaWeb/silhouette-basket-01.svg`);
+  element.setAttribute("src", `./nbaWeb/silhouette-basket-05.svg`);
 }
 
 //產品圖
@@ -39,5 +39,3 @@ $(document).ready(function () {
     $("body [data-num=" + choose + "]").removeClass("hover_img");
   });
 });
-
-

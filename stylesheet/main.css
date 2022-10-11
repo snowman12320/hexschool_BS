@@ -12209,14 +12209,9 @@ textarea.form-control-lg {
   font: normal normal bold 24px/39px Kalam;
 }
 
-.new_product span {
-  color: #cc2b31;
-  font: normal normal bold 24px/39px Kalam;
-}
-
 .new_product_img {
   width: 100%;
-  height: 250px;
+  height: 312px;
   position: absolute;
   border-radius: 3%;
   color: white;
@@ -12233,11 +12228,6 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   justify-content: end;
-}
-
-.top_selling span {
-  color: #cc2b31;
-  font: normal normal bold 24px/39px Kalam;
 }
 
 .sell_more a:hover {

@@ -74,20 +74,22 @@
       <!-- row 都加 flex-row 比較清楚~~~ -->
       <div id="Service"
         class="flex-lg-row flex-column-reverse d-flex justify-content-center align-items-center row-cols-1 row-cols-md-2 pt-5 mx-md-5 px-md-5 
-              mx-1 px-1 g-3"
+              mx-1 px-1 g-5"
       >
-        <div class="col d-flex align-items-center justify-content-center">
+        <div class="col d-flex align-items-center justify-content-center me-md-5">
           <img
-            class="of-cover money_img "
+            class="of-cover money_img w-100"
+            height="486"
+            width="648"
             src="../nbaWeb/andre-hunter-RPKdvPcYAUo-unsplash.jpg"
             alt="義賣球衣"
           />
         </div>
-        <div class="col ">
-          <div class="money">
-            <p class="money_service">Service</p>
-            <h2 class="money_title text-nbaBlue">FUNDRAISING</h2>
-            <p>
+        <div class="col" style="width:380px">
+          <div class="money w-100">
+            <p class="fs-4 text-pickYellow">Service</p>
+            <h2 class=" text-nbaBlue">EVERYBODY FUNDRAISING</h2>
+            <p class="fs-6">
               The Association of Jersey Charities exists to provide guidance to
               and be a source of funding for its members. <br />
               <br>
@@ -103,18 +105,17 @@
         </div>
       </div>
       <!-- 最新球衣 -->
-      <div id="Product" class="new_product text-center my-5">
-        <span>NEW</span>
+      <div id="Product" class=" my-5 d-flex justify-content-center align-items-center text-nbaRed">
+        <h2>NEW</h2>
         <img
           src="nbaWeb/05284b30a1fda6bcdc09420b5c1e7127.svg"
           height="80"
           alt="recentlyLogo"
           class=""
         />
-        <span>PRODUCTS</span>
+        <h2>PRODUCTS</h2>
       </div>
-      <div class="container px-5">
-        <div class="row row-cols-2 row-cols-lg-4 g-4">
+        <div class="row row-cols-2 row-cols-lg-4 g-4 px-3">
           <div class="col overflow-hidden">
             <div class="card w-100 position-relation" data-num="1">
               <div class="new_product_img">
@@ -123,7 +124,8 @@
               </div>
               <img
                 data-num="1"
-                height="250"
+                height="312"
+                width="312"
                 class="card-img of-cover"
                 src="nbaWeb/olivier-collet-H7cIqigZOBo-unsplash.jpg"
                 alt="new1"
@@ -138,8 +140,8 @@
               </div>
               <img
                 data-num="2"
-                height="250"
-                class="card-img of-cover"
+                height="312"
+                width="312"                class="card-img of-cover"
                 src="nbaWeb/eddy-lackmann-6MmfmBJd8PE-unsplash.jpg"
                 alt="new2"
               />
@@ -153,7 +155,8 @@
               </div>
               <img
                 data-num="3"
-                height="250"
+                height="312"
+                width="312"                
                 class="card-img of-cover"
                 src="nbaWeb/mingxuan_leng-EXqK7oqvKhQ-unsplash.jpg"
                 alt="new3"
@@ -168,7 +171,8 @@
               </div>
               <img
                 data-num="4"
-                height="250"
+                height="312"
+                width="312"                
                 class="card-img of-cover"
                 src="nbaWeb/tyler-martoia-nVpT1jeu3f0-unsplash.jpg"
                 alt="new4"
@@ -176,36 +180,36 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="text-center mt-5">
+
+      <div class="text-center mt-4">
         <a
           type="button"
           href=""
-          class="btn btn-outline-nbaBlue rounded-pill me-3"
+          class="btn btn-outline-nbaBlue rounded-pill me-3 fs-5"
           >SEE MORE PRODUCT</a
         >
-        <a type="button" href="" class="btn btn-nbaRed rounded-pill"
+        <a type="button" href="" class="btn btn-nbaRed rounded-pill fs-5"
           >CUSTOMIZED JERSEY</a
         >
       </div>
 
       <!-- 銷售排行 -->
-      <div id="Ranking" class="top_selling text-center my-5">
-        <span>TOP</span>
+      <div id="Ranking" class="d-flex justify-content-center align-items-center text-nbaRed mt-5">
+        <h2>TOP</h2>
         <img
           src="nbaWeb/Lovepik_com-401319703-basketball.png"
           height="80"
           alt="sellLogo"
           class=""
         />
-        <span>SELLING</span>
-        <p class="fs-6 text-pickBlack">
-          which are the top-selling NBA jerseys?
-        </p>
+        <h2>SELLING</h2>
       </div>
+      <p class="fs-6 text-pickBlack text-center mb-5">
+        which are the top-selling NBA jerseys?
+      </p>
       <div class="row row-cols-1 row-cols-lg-3 g-4 rank_card mx-2 mt-5">
         <div class="col mb-5 mb-lg-0">
-          <div class="card position-relative shadow">
+          <div class="card position-relative shadow" style="height:424px ;">
             <img
               data-num="001"
               src="nbaWeb/PNG-images-NBA-Players-41png.png"
@@ -215,7 +219,7 @@
             />
             <div data-num="001" class="img_back img_back001"></div>
             <div class="card-body">
-              <h5 class="card-title fw-bold">kobe bryant</h5>
+              <h3 class="card-title fw-bold fs-6">kobe bryant</h3>
               <p class="card-text fs-6">
                 Bryant won five NBA championships, was an 18-time All-Star, a
                 15-time member of the All-NBA Team, a 12-time member of the
@@ -237,7 +241,7 @@
           </div>
         </div>
         <div class="col mb-5 mb-lg-0">
-          <div class="card position-relative shadow">
+          <div class="card position-relative shadow" style="height:424px ;">
             <img
             data-num="002"
               src="nbaWeb/PNG-images-NBA-Players-28png.png"
@@ -247,7 +251,7 @@
             />
             <div data-num="002" class="img_back img_back002"></div>
             <div class="card-body">
-              <h5 class="card-title fw-bold">LeBron James</h5>
+              <h3 class="card-title fw-bold fs-6">LeBron James</h3>
               <p class="card-text fs-6">
                 James has won four NBA championships, four NBA MVP awards, four
                 NBA Finals MVP awards, three All-Star MVP awards, and two
@@ -266,7 +270,7 @@
           </div>
         </div>
         <div class="col mb-5 mb-lg-0">
-          <div class="card position-relative shadow">
+          <div class="card position-relative shadow" style="height:424px ;">
             <img
             data-num="003"
               src="nbaWeb/PNG-images-NBA-Players-1png.png"
@@ -276,7 +280,7 @@
             />
             <div data-num="003" class="img_back img_back003"></div>
             <div class="card-body">
-              <h5 class="card-title fw-bold">Stephen Curry</h5>
+              <h3 class="card-title fw-bold fs-6">Stephen Curry</h3>
               <p class="card-text fs-6">
                 Curry won his first league MVP award and led the Warriors to
                 their first championship since 1975. The following season, he
@@ -290,7 +294,7 @@
             <div class="sell_more">
               <a
                 href="#"
-                class="d-block text-center text-decoration-none link-pick_black pb-2"
+                class="d-block text-center text-decoration-none link-pick_black pb-2 fs-6"
                 >MORE</a
               >
             </div>
@@ -304,7 +308,7 @@
         <a
           type="button"
           href=""
-          class="btn btn-outline-nbaBlue rounded-pill my-5"
+          class="btn btn-outline-nbaBlue rounded-pill my-5 fs-5"
           >SEE MORE LISTS</a
         >
       </div>
@@ -323,7 +327,7 @@
             <div class="">
               <h3>JOIN TEAM</h3>
               <p>jersey fundraising</p>
-              <a href="" class="btn btn-outline-nbaBlue rounded-pill"
+              <a href="" class="btn btn-outline-nbaBlue rounded-pill fs-5"
                 >SEND MESSAGE</a
               >
             </div>
@@ -338,7 +342,7 @@
             <div class="">
               <h3>JOIN TEAM</h3>
               <p>customized jersey</p>
-              <a href="" class="btn btn-outline-nbaBlue rounded-pill"
+              <a href="" class="btn btn-outline-nbaBlue rounded-pill fs-5"
                 >SEND MESSAGE</a
               >
             </div>
@@ -351,10 +355,10 @@
           <img
             onmouseover="hover_custom(this);"
             onmouseout="unhover_custom(this);"
-            src="./nbaWeb/silhouette-basket-01.svg"
+            src="./nbaWeb/silhouette-basket-05.svg"
             alt=""
-            height="80"
-            width="100"
+            height="150"
+            width="150"
             class="custom_img_after position-fixed bottom-0 end-0"
             data-bs-toggle="tooltip"
             data-bs-placement="top"
