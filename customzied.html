@@ -81,255 +81,153 @@
       </nav>
       <!-- banner -->
       <div class="custom_banner bgp-top bgs-cover"></div>
-      <!-- 募款 -->
-      <!-- row 都加 flex-row 比較清楚~~~ -->
-      <div
-        id="Service"
-        class="flex-lg-row flex-column-reverse d-flex justify-content-center align-items-center row-cols-1 row-cols-md-2 pt-5 mx-md-5 px-md-5 mx-1 px-1 g-5"
+      <!-- 註冊客製化球衣 -->
+      <form
+        class="card py-5 px-4 col-md-5 needs-validation w-75 mx-auto my-5 shadow border-5 border-nbaRed border-top border-start-0 border-end-0 border-bottom-0"
+        novalidate
       >
-        <div
-          class="col d-flex align-items-center justify-content-center me-md-5"
-        >
-          <img
-            class="of-cover money_img w-100"
-            height="486"
-            width="648"
-            src="../nbaWeb/andre-hunter-RPKdvPcYAUo-unsplash.jpg"
-            alt="義賣球衣"
-          />
-        </div>
-        <div class="col" style="width: 380px">
-          <div class="money w-100">
-            <p class="fs-4 text-pickYellow">Service</p>
-            <h2 class="text-nbaBlue">EVERYBODY FUNDRAISING</h2>
-            <p class="fs-6">
-              The Association of Jersey Charities exists to provide guidance to
-              and be a source of funding for its members. <br />
-              <br />
-              Registered Jersey <br />
-              charities and other charities registered as charities under the
-              law of the United Kingdom, <br />
-              on the basis the charity carries out <br />
-              substantial charity activities in or from within Jersey
-              <br />
-              welcome to apply to be members. <br />
-            </p>
+        <h2 class="text-center fs-4 mb-5">CUSTOMZIED ORDER LIST</h2>
+        <div class="row g-2">
+          <div class="col-md-6">
+            <label for="validationServer01" class="form-label">Last name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationServer01"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
           </div>
-        </div>
-      </div>
-      <!-- 最新球衣 -->
-      <div
-        id="Product"
-        class="my-5 d-flex justify-content-center align-items-center text-nbaRed"
-      >
-        <h2>NEW</h2>
-        <img
-          src="nbaWeb/05284b30a1fda6bcdc09420b5c1e7127.svg"
-          height="80"
-          alt="recentlyLogo"
-          class=""
-        />
-        <h2>PRODUCTS</h2>
-      </div>
-      <div class="row row-cols-2 row-cols-lg-4 g-4 px-3">
-        <div class="col overflow-hidden">
-          <div class="card w-100 position-relation" data-num="1">
-            <div class="new_product_img">
-              <h6>Player</h6>
-              <h4>Kobe Bryant</h4>
-            </div>
-            <img
-              data-num="1"
-              height="312"
-              width="312"
-              class="card-img of-cover"
-              src="nbaWeb/olivier-collet-H7cIqigZOBo-unsplash.jpg"
-              alt="new1"
+          <div class="col-md-6">
+            <label for="validationServer02" class="form-label"
+              >First name</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="validationServer02"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="col-md-12">
+            <label for="validationServer03" class="form-label">Cellphone</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationServer03"
+              required
             />
           </div>
-        </div>
-        <div class="col">
-          <div class="card w-100 position-relation" data-num="2">
-            <div class="new_product_img">
-              <h6>Player</h6>
-              <h4>Derrick Rose</h4>
-            </div>
-            <img
-              data-num="2"
-              height="312"
-              width="312"
-              class="card-img of-cover"
-              src="nbaWeb/eddy-lackmann-6MmfmBJd8PE-unsplash.jpg"
-              alt="new2"
-            />
-          </div>
-        </div>
-        <div class="col">
-          <div class="card w-100 position-relation" data-num="3">
-            <div class="new_product_img">
-              <h6>Player</h6>
-              <h4>Kevin Durant</h4>
-            </div>
-            <img
-              data-num="3"
-              height="312"
-              width="312"
-              class="card-img of-cover"
-              src="nbaWeb/mingxuan_leng-EXqK7oqvKhQ-unsplash.jpg"
-              alt="new3"
-            />
-          </div>
-        </div>
-        <div class="col">
-          <div class="card w-100 position-relation" data-num="4">
-            <div class="new_product_img">
-              <h6>Player</h6>
-              <h4>Stephen Curry</h4>
-            </div>
-            <img
-              data-num="4"
-              height="312"
-              width="312"
-              class="card-img of-cover"
-              src="nbaWeb/tyler-martoia-nVpT1jeu3f0-unsplash.jpg"
-              alt="new4"
-            />
-          </div>
-        </div>
-      </div>
 
-      <div class="text-center mt-4">
-        <a
-          type="button"
-          href=""
-          class="btn btn-outline-nbaBlue rounded-pill me-3 fs-5"
-          >SEE MORE PRODUCT</a
-        >
-        <a type="button" href="" class="btn btn-nbaRed rounded-pill fs-5"
-          >CUSTOMIZED JERSEY</a
-        >
-      </div>
+          <div class="col-md-6">
+            <label for="validationCustom04" class="form-label">Address</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Choose City</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label
+              for="validationCustom05"
+              class="form-label fs-0"
+              style="color: #fff"
+              >Address</label
+            >
+            <select class="form-select" id="validationCustom05" required>
+              <option selected disabled value="">Choose State</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress2"
+              placeholder="Input detail address"
+              required
+            />
+          </div>
 
-      <!-- 銷售排行 -->
-      <div
-        id="Ranking"
-        class="d-flex justify-content-center align-items-center text-nbaRed mt-5"
-      >
-        <h2>TOP</h2>
-        <img
-          src="nbaWeb/Lovepik_com-401319703-basketball.png"
-          height="80"
-          alt="sellLogo"
-          class=""
-        />
-        <h2>SELLING</h2>
-      </div>
-      <p class="fs-6 text-pickBlack text-center mb-5">
-        which are the top-selling NBA jerseys?
-      </p>
-      <div class="row row-cols-1 row-cols-lg-3 g-4 rank_card mx-2 mt-5">
-        <div class="col mb-5 mb-lg-0">
-          <div class="card position-relative shadow" style="height: 424px">
-            <img
-              data-num="001"
-              src="nbaWeb/PNG-images-NBA-Players-41png.png"
-              height="300"
-              class="card-img-top of-none op-top position-absolute mt-n5"
-              alt="..."
-            />
-            <div data-num="001" class="img_back img_back001"></div>
-            <div class="card-body">
-              <h3 class="card-title fw-bold fs-6">kobe bryant</h3>
-              <p class="card-text fs-6">
-                Bryant won five NBA championships, was an 18-time All-Star, a
-                15-time member of the All-NBA Team, a 12-time member of the
-                All-Defensive Team, the 2008 NBA Most Valuable Player (MVP), and
-                a two-time NBA Finals MVP. Bryant also led the NBA in scoring
-                twice, and ranks fourth in league all-time regular season and
-                postseason scoring. He was posthumously voted into the Naismith
-                Memorial Basketball Hall of Fame in 2020 and named to the NBA
-                75th Anniversary Team in 2021.
-              </p>
-            </div>
-            <div class="sell_more">
-              <a
-                href="#"
-                class="d-block text-center text-decoration-none link-pick_black pb-2"
-                >MORE</a
-              >
-            </div>
+          <div class="col-md-12">
+            <label for="validationCustom06" class="form-label fs-0"
+              >Designer</label
+            >
+            <select class="form-select" id="validationCustom06" required>
+              <option selected disabled value="">Choose Designer</option>
+              <option>...</option>
+            </select>
           </div>
-        </div>
-        <div class="col mb-5 mb-lg-0">
-          <div class="card position-relative shadow" style="height: 424px">
-            <img
-              data-num="002"
-              src="nbaWeb/PNG-images-NBA-Players-28png.png"
-              height="300"
-              class="card-img-top of-none op-top position-absolute mt-n5"
-              alt="..."
-            />
-            <div data-num="002" class="img_back img_back002"></div>
-            <div class="card-body">
-              <h3 class="card-title fw-bold fs-6">LeBron James</h3>
-              <p class="card-text fs-6">
-                James has won four NBA championships, four NBA MVP awards, four
-                NBA Finals MVP awards, three All-Star MVP awards, and two
-                Olympic gold medals. James has scored the most points in the
-                playoffs, the second most career points, and has the seventh
-                most career assists.
-              </p>
-            </div>
-            <div class="sell_more">
-              <a
-                href="#"
-                class="d-block text-center text-decoration-none link-pick_black pb-2 stretched-link"
-                >MORE</a
-              >
-            </div>
+          <div class="col-md-12">
+            <label for="inputCity" class="form-label fs-0">Pay</label>
+            <select class="form-select" id="validationCustom06" required>
+              <option selected disabled value="">Choose Pay</option>
+              <option>...</option>
+            </select>
           </div>
-        </div>
-        <div class="col mb-5 mb-lg-0">
-          <div class="card position-relative shadow" style="height: 424px">
-            <img
-              data-num="003"
-              src="nbaWeb/PNG-images-NBA-Players-1png.png"
-              height="300"
-              class="card-img-top of-none op-top position-absolute mt-n5"
-              alt="..."
-            />
-            <div data-num="003" class="img_back img_back003"></div>
-            <div class="card-body">
-              <h3 class="card-title fw-bold fs-6">Stephen Curry</h3>
-              <p class="card-text fs-6">
-                Curry won his first league MVP award and led the Warriors to
-                their first championship since 1975. The following season, he
-                became the first player to be elected MVP by a unanimous vote
-                and lead the league in scoring while shooting above 50–40–90.
-                That same year, the Warriors broke the record for the most wins
-                in an NBA season en route to reaching the 2016 NBA Finals, which
-                they lost to the Cleveland Cavaliers in seven games.
-              </p>
-            </div>
-            <div class="sell_more">
-              <a
-                href="#"
-                class="d-block text-center text-decoration-none link-pick_black pb-2 fs-6"
-                >MORE</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="sell_more text-center">
-        <a
-          type="button"
-          href="allstar.html"
-          class="btn btn-outline-nbaBlue rounded-pill my-5 fs-5"
-          >SEE MORE LISTS</a
-        >
-      </div>
+          <div class="col-md-6">
+            <label for="autoSizingCheck2" class="form-label">Plus</label>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="autoSizingCheck2"
+              />
+              <label class="form-check-label" for="autoSizingCheck2">
+                Package + $10
+              </label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label
+              for="autoSizingCheck2"
+              class="form-label fs-0"
+              style="color: #fff"
+              >Address</label
+            >
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="autoSizingCheck2"
+              />
+              <label class="form-check-label" for="autoSizingCheck2">
+                Frameless + $1000
+              </label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="validationServer03" class="form-label">Email</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationServer03"
+              required
+            />
+            <div class="invalid-feedback">Please provide a email.</div>
+          </div>
+          <div class="col-12">
+            <label for="validationServer04" class="form-label">Remark</label>
+            <textarea
+              class="form-control"
+              id="validationServer04"
+              rows="3"
+            ></textarea>
+          </div>
+          <p class="text-center fs-4 my-3">Total USD$6666</p>
+          <div class="col-12 text-center">
+            <button
+              type="submit"
+              class="btn btn-nbaBlue rounded-pill fs-4 px-5"
+            >
+              Send Order
+            </button>
+          </div>
+        </div>
+      </form>
+
       <!-- 徵才 -->
       <div class="container-lg border-nbaRed border-top border-3">
         <div
