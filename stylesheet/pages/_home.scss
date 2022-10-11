@@ -97,8 +97,10 @@
 }
 
 .rank_card {
-  .card:hover {
-    box-shadow: 0 50px 50px -10px rgba(0, 0, 0, 0.5);
+  // 連動hover????????????
+  .card-img-top:hover .sell_more a {
+      font-weight: bold;
+      color:$nbaRed;
   }
   .img_back {
     width: 100%;

@@ -113,24 +113,28 @@ button {
   }
 }
 
-.aside{
-  a{
+.aside {
+  a {
     color: $pickBlack;
-    &:hover{
+    &:active {
       color: $nbaBlue;
     }
-  }
-  a::after{
-    content:"";
-    background-color: #000;
-    top: 50%;
-    height: 1px;
-    width: 50px;
+    &:hover {
+      color: $nbaBlue;
+    }
+    span {
+      color: $nbaBlue;
+      font-weight: bold;
+      display: none;
+    }
+    &:hover span {
+      display: inline-block;
+    }
   }
 }
-@include minipad(){
+@include minipad() {
   .aside {
-    h3{
+    h3 {
       text-align: center;
     }
   }

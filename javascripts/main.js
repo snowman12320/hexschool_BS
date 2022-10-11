@@ -18,24 +18,25 @@ function unhover_custom(element) {
 
 //產品圖
 $(document).ready(function () {
-  $(".card-img").mouseover(function (e) {
+  $(".card-img").hover(function (e) {
     var choose = e.target.dataset.num;
-    $("body [data-num=" + choose + "]").addClass("hover_img");
+    $("body [data-num=" + choose + "]").toggleClass("hover_img");
   });
-  $(".card-img").mouseout(function (e) {
-    var choose = e.target.dataset.num;
-    $("body [data-num=" + choose + "]").removeClass("hover_img");
-  });
+  // .mouseenter() + .mouseleave() 也可  /.mouseout() .mousemove() 應該是移動紀錄點
+  // $(".card-img").mouseleave(function (e) {
+  //   var choose = e.target.dataset.num;
+  //   $("body [data-num=" + choose + "]").removeClass("hover_img");
+  // });
 });
 
 //排行圖
 $(document).ready(function () {
-  $(".card-img-top").mouseover(function (e) {
+  $(".card-img-top").hover(function (e) {
     var choose = e.target.dataset.num;
-    $("body [data-num=" + choose + "]").addClass("hover_img");
+    $("body [data-num=" + choose + "]").toggleClass("hover_img");
   });
-  $(".card-img-top").mouseout(function (e) {
-    var choose = e.target.dataset.num;
-    $("body [data-num=" + choose + "]").removeClass("hover_img");
-  });
+  // $(".card-img-top").mouseout(function (e) {
+  //   var choose = e.target.dataset.num;
+  //   $("body [data-num=" + choose + "]").removeClass("hover_img");
+  // });
 });
