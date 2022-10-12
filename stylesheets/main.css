@@ -13306,6 +13306,11 @@ textarea.form-control-lg {
   height: 1px;
 }
 
+@media (max-width: 1040px) {
+  .sellbtn_Rwd {
+    width: 100%;
+  }
+}
 button {
   position: relative;
   display: inline-block;

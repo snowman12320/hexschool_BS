@@ -155,6 +155,12 @@
     height: 1px;
   }
 }
+@include sellbtn_Rwd;
+// @include pc() {
+//   .sellbtn_Rwd {
+//     width: 100%;
+//   }
+// }
 
 //3D按鈕
 $bg: #fff;
