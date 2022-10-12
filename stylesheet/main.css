@@ -13556,15 +13556,16 @@ a {
   height: 424px;
 }
 
+.btnRwd {
+  width: 90%;
+}
+
 @media (max-width: 1040px) {
   .imgRwd {
     left: 30%;
   }
   .fsRwd {
     font-size: 32px;
-  }
-  .btnRwd {
-    width: 90%;
   }
   .btnRwd a {
     font-size: 48px;
