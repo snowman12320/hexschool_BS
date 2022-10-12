@@ -21,6 +21,10 @@
     font-size: 32px;
   }
   .btnRwd {
-    max-width: inherit;
+    width: 90%;
+    // width: inherit;
+    a {
+      font-size: 48px;
+    }
   }
 }

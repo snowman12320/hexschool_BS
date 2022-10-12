@@ -13564,7 +13564,10 @@ a {
     font-size: 32px;
   }
   .btnRwd {
-    max-width: inherit;
+    width: 90%;
+  }
+  .btnRwd a {
+    font-size: 48px;
   }
 }
 * {
