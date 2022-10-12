@@ -568,6 +568,7 @@ $utilities: map-merge(
         sm: $line-height-sm,
         base: $line-height-base,
         lg: $line-height-lg,
+        xl: 3,
       ),
     ),
     "text-align": (
@@ -762,7 +763,7 @@ $utilities: map-merge(
       class: bgp,
       values: (
         center: center center,
-        bottom:center bottom,
+        bottom: center bottom,
       ),
     ),
     "background-attachment": (
@@ -774,21 +775,21 @@ $utilities: map-merge(
       property: object-fit,
       class: of,
       values: (
-        cover:cover,
-        contain:contain,
-        fill:fill,
-        none:none,
-      )
+        cover: cover,
+        contain: contain,
+        fill: fill,
+        none: none,
+      ),
     ),
     "object-position": (
       property: object-position,
       class: op,
       values: (
         // 定位左右中間 + 顯示上下
-        right:right bottom,
-        top:center top,
-      )
-    ),
+        right: right bottom,
+        top: center top,
+      ),
+    )
   ),
   $utilities
 );

@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -8886,6 +8887,10 @@ textarea.form-control-lg {
   line-height: 2 !important;
 }
 
+.lh-xl {
+  line-height: 3 !important;
+}
+
 .text-start {
   text-align: left !important;
 }
@@ -13541,6 +13546,27 @@ a {
   color: #0253a5;
 }
 
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+.allstaritem_back {
+  border-radius: 2%;
+  background-image: url(../../nbaWeb/1126209.png);
+  height: 424px;
+}
+
+@media (max-width: 1040px) {
+  .imgRwd {
+    left: 30%;
+  }
+  .fsRwd {
+    font-size: 32px;
+  }
+  .btnRwd {
+    max-width: inherit;
+  }
+}
 * {
   font-family: "Rubik", sans-serif;
 }
