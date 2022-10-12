@@ -117,25 +117,35 @@ button {
   background-image: url(../../nbaWeb/banner3.jpg);
   width: 100%;
   height: 600px;
-  background-position:center center;
-      background-size: cover;
-
+  background-position: center center;
+  background-size: cover;
 }
 @include pad() {
   .allstar_banner {
     background-image: url(../../nbaWeb/160121164737-all-star-starters-graphic-1280-012116.home-t3.jpg);
     width: 100%;
     height: 400px;
-    background-position:top center;
+    background-position: top center;
   }
 }
 
-
-.allstar_bg{
+.allstar_bg {
   background-image: url(../../nbaWeb/CGCJtcwUoAAQX8_.jpg);
   width: 200px;
   height: 200px;
-  background-position:center center;
-  background-size:contain;
+  background-position: center center;
+  background-size: contain;
   background-repeat: no-repeat;
+}
+@include pc() {
+  .allstar_bg {
+    width: 400px;
+    height: 400px;
+  }
+  .allstartext_rwd {
+    font-size: 32px;
+    .br {
+      display: none;
+    }
+  }
 }

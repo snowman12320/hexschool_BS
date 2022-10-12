@@ -103,10 +103,13 @@
 }
 
 .rank_card {
-  // 連動hover????????????
+  // 連動hover???
   .card-img-top:hover .sell_more a {
     font-weight: bold;
     color: $nbaRed;
+  }
+  .card-img-top:hover .card {
+    box-shadow: 0 3px 3px #dddd;
   }
   .img_back {
     width: 100%;
@@ -139,7 +142,7 @@
     text-overflow: ellipsis; /*文字省略號*/
     height: 80px;
     -webkit-line-clamp: 2;
-    // display: -webkit-box;
+    display: box;
     -webkit-box-orient: vertical;
   }
   a::after {
