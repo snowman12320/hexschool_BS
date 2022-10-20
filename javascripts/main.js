@@ -9,30 +9,38 @@ function unhover_custom(element) {
   element.setAttribute("src", `./nbaWeb/silhouette-basket-05.svg`);
 }
 
-//產品圖
-$(document).ready(function () {
-  $(".card-img").hover(function (e) {
-    var choose = e.target.dataset.num;
-    $("body [data-num=" + choose + "]").toggleClass("hover_img");
-  });
-  // .mouseenter() + .mouseleave() 也可  /.mouseout() .mousemove() 應該是移動紀錄點
-  // $(".card-img").mouseleave(function (e) {
-  //   var choose = e.target.dataset.num;
-  //   $("body [data-num=" + choose + "]").removeClass("hover_img");
-  // });
+// JS啟用提示框
+var tooltipTriggerList = [].slice.call(
+  document.querySelectorAll('[data-bs-toggle="tooltip"]')
+);
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl);
 });
 
+//產品圖
+// $(document).ready(function () {
+//   $(".card-img").hover(function (e) {
+//     var choose = e.target.dataset.num;
+//     $("body [data-num=" + choose + "]").toggleClass("hover_img");
+//   });
+// .mouseenter() + .mouseleave() 也可  /.mouseout() .mousemove() 應該是移動紀錄點
+// $(".card-img").mouseleave(function (e) {
+//   var choose = e.target.dataset.num;
+//   $("body [data-num=" + choose + "]").removeClass("hover_img");
+// });
+// });
+
 //排行圖
-$(document).ready(function () {
-  $(".card-img-top").mouseenter(function (e) {
-    var choose = e.target.dataset.num;
-    $("body [data-num=" + choose + "]").addClass("hover_img");
-  });
-  $(".card-img-top").mouseleave(function (e) {
-    var choose = e.target.dataset.num;
-    $("body [data-num=" + choose + "]").removeClass("hover_img");
-  });
-});
+// $(document).ready(function () {
+//   $(".card-img-top").mouseenter(function (e) {
+//     var choose = e.target.dataset.num;
+//     $("body [data-num=" + choose + "]").addClass("hover_img");
+//   });
+//   $(".card-img-top").mouseleave(function (e) {
+//     var choose = e.target.dataset.num;
+//     $("body [data-num=" + choose + "]").removeClass("hover_img");
+//   });
+// });
 
 //註冊驗證
 // Example starter JavaScript for disabling form submissions if there are invalid fields

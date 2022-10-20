@@ -103,25 +103,34 @@
 }
 
 .rank_card {
-  // 連動hover???
-  .card-img-top:hover .sell_more a {
+  // 連動hover 不用加&
+  :hover ~ .sell_more a {
     font-weight: bold;
     color: $nbaRed;
   }
-  .card-img-top:hover .card {
-    box-shadow: 0 3px 3px #dddd;
+  :hover ~ .card {
+    box-shadow: 0 20px 20px #dddd;
   }
+  :hover ~ .img_back001 {
+    background-image: url(../../nbaWeb/olivier-collet-H7cIqigZOBo-unsplash.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+  :hover ~ .card-img-top {
+    display: none;
+  }
+
   .img_back {
     width: 100%;
     height: 250px;
     background-color: #fff;
     border-radius: 5%;
   }
-  .hover_img.img_back001 {
-    background-image: url(../../nbaWeb/olivier-collet-H7cIqigZOBo-unsplash.jpg);
-    background-position: center center;
-    background-size: cover;
-  }
+  // .hover_img.img_back001 {
+  //   background-image: url(../../nbaWeb/olivier-collet-H7cIqigZOBo-unsplash.jpg);
+  //   background-position: center center;
+  //   background-size: cover;
+  // }
   .hover_img.img_back002 {
     background-image: url(../../nbaWeb/PNG-images-NBA-Players-3png.png);
     background-position: center center;
@@ -133,9 +142,9 @@
     background-position: center center;
     background-size: cover;
   }
-  .hover_img.card-img-top {
-    display: none;
-  }
+  // .hover_img .card-img-top {
+  //   display: none;
+  // }
   .card-text {
     white-space: nowrap; /*段落不自動換行*/
     overflow: hidden; /*超過寬度隱藏*/
