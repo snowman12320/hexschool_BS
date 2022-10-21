@@ -3942,7 +3942,7 @@ textarea.form-control-lg {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: #fff;
+  --bs-nav-link-color: #000;
   --bs-nav-link-hover-color: #cc2b31;
   --bs-nav-link-disabled-color: #6c757d;
   display: flex;
@@ -13158,9 +13158,6 @@ textarea.form-control-lg {
   font-family: "Rubik", sans-serif;
 }
 
-.navbar {
-  /* Grow Shadow */
-}
 .navbar .navbar-brand {
   /* 圖片裝入容器 */
   background-image: url(../../nbaWeb/1588928235basketball-fire-logo-silhouette-freesvg.org.svg);
@@ -13178,34 +13175,26 @@ textarea.form-control-lg {
   background-color: #fff;
 }
 .navbar h1, .navbar .h1 {
-  color: #fff;
+  color: #000 !important;
 }
 .navbar h1:hover, .navbar .h1:hover {
-  color: #cc2b31;
+  color: #cc2b31 !important;
 }
-.navbar .navbar-nav a {
-  color: #fff;
+.navbar .navbar-nav .nav-link {
+  color: #000 !important;
   font-weight: bold;
 }
-.navbar .navbar-nav a:hover {
-  color: #cc2b31;
-}
-.navbar .hvr-grow-shadow {
-  display: inline-block;
-  vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  transition-duration: 0.3s;
-  transition-property: box-shadow, transform;
-}
-.navbar .hvr-grow-shadow:hover,
-.navbar .hvr-grow-shadow:focus,
-.navbar .hvr-grow-shadow:active {
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-  transform: scale(1.1);
+.navbar .navbar-nav .nav-link:hover {
+  color: #cc2b31 !important;
 }
 .navbar :active {
   color: #cc2b31;
+}
+.navbar .navbar-nav .nav_pill {
+  color: #fff;
+}
+.navbar .navbar-nav .nav_pill:hover {
+  box-shadow: 0 10px 1px rgb(0, 0, 0);
 }
 
 .banner {
@@ -13310,60 +13299,6 @@ textarea.form-control-lg {
     width: 100%;
   }
 }
-button {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  outline: none;
-  border: 0;
-  vertical-align: middle;
-  text-decoration: none;
-  font-size: inherit;
-  font-family: inherit;
-}
-button.learn-more {
-  font-weight: 600;
-  color: #382b22;
-  text-transform: uppercase;
-  padding: 1.25em 2em;
-  background: #fff0f0;
-  border: 2px solid none;
-  border-radius: 0.75em;
-  transform-style: preserve-3d;
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
-}
-button.learn-more::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #000;
-  border-radius: inherit;
-  box-shadow: 0 0 0 2px none, 0 0.625em 0 0 #000;
-  transform: translate3d(0, 0.75em, -1em);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
-}
-button.learn-more:hover {
-  background: #ffe9e9;
-  transform: translate(0, 0.25em);
-}
-button.learn-more:hover::before {
-  box-shadow: 0 0 0 2px none, 0 0.5em 0 0 #000;
-  transform: translate3d(0, 0.5em, -1em);
-}
-button.learn-more:active {
-  background: #ffe9e9;
-  transform: translate(0em, 0.75em);
-}
-button.learn-more:active::before {
-  box-shadow: 0 0 0 2px none, 0 0 #000;
-  transform: translate3d(0, 0, -1em);
-}
-
 * {
   font-family: "Rubik", sans-serif;
 }

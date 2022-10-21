@@ -12,7 +12,7 @@
   <body>
     <div class="container-xxl">
       <!-- 導覽 -->
-      <nav class="navbar navbar-expand-md bg-nbaBlue">
+      <nav class="navbar navbar-expand-md bg-white">
         <div class="container-fluid d-flex justify-content-between">
           <div class="d-flex">
             <a class="navbar-brand" href="#">JerseyTown</a>
@@ -45,7 +45,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link p-3" href="#Service">Service</a>
+                <a class="nav-link p-3" href="allstarListItem.html">Story</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link p-3" href="newproduct.html">Product</a>
@@ -53,12 +53,12 @@
               <li class="nav-item">
                 <a class="nav-link p-3" href="allstar.html">Rank</a>
               </li>
-              <li class="hvr-grow-shadow ms-1">
+              <li class="ms-1">
                 <button
-                  class="learn-more btn btn-nbaRed rounded-pill text-white p-2 mt-lg-2 bg-nbaRed disable"
+                  class="btn btn-nbaRed rounded-pill p-2 mt-lg-2 bg-nbaBlue nav_pill"
                 >
                   <a
-                    class="text-decoration-none text-white fs-6"
+                    class="text-decoration-none fs-6 d-block"
                     type="submit"
                     href="customzied.html"
                   >
@@ -99,16 +99,23 @@
           ></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active" data-bs-interval="12000">
             <!-- 加寬度100%不錯位跑版 -->
-            <video width="1440" height="810" class="w-100" controls muted>
+            <video
+              width="1440"
+              height="810"
+              class="w-100"
+              controls
+              muted
+              autoplay
+            >
               <source
                 src="./nbaWeb/Miami Heat vs. Memphis Grizzlies Full Game Highlights _ Oct 7 _ 2022 NBA Preseason.mp4"
                 type="video/mp4"
               />
             </video>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="2000">
             <!-- 加寬度100%不錯位跑版 -->
             <img
               src="./nbaWeb/john-villablanca-_7EXgSQ98ew-unsplash.jpg"
@@ -117,7 +124,7 @@
               height="810"
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="2000">
             <img
               src="./nbaWeb/dean-bennett-nFjLHE4vmn4-unsplash.jpg"
               class="d-block w-100 op-center of-cover"
@@ -252,7 +259,7 @@
         <a
           type="button"
           href="newproduct.html"
-          class="btn btn-outline-nbaBlue rounded-pill fs-5 me-md-3 me-0 mb-3 mb-md-0"
+          class="btn btn-outline-dark rounded-pill fs-5 me-md-3 me-0 mb-3 mb-md-0"
           >SEE MORE PRODUCT</a
         >
         <a
@@ -306,7 +313,7 @@
             </div>
             <a
               href="allstarListItem.html"
-              class="text-center text-decoration-none pb-2 stretched-link"
+              class="text-center text-decoration-none pb-2 stretched-link text-dark text-dark"
               >MORE</a
             >
           </div>
@@ -331,13 +338,11 @@
                 most career assists.
               </p>
             </div>
-            <div class="sell_more">
-              <a
-                href="allstarListItem.html"
-                class="d-block text-center text-decoration-none link-pick_black pb-2 stretched-link"
-                >MORE</a
-              >
-            </div>
+            <a
+              href="allstarListItem.html"
+              class="text-center text-decoration-none pb-2 stretched-link text-dark"
+              >MORE</a
+            >
           </div>
         </div>
         <div class="col mb-3 mb-lg-0">
@@ -362,13 +367,11 @@
                 they lost to the Cleveland Cavaliers in seven games.
               </p>
             </div>
-            <div class="sell_more">
-              <a
-                href="allstarListItem.html"
-                class="d-block text-center text-decoration-none link-pick_black pb-2 fs-6"
-                >MORE</a
-              >
-            </div>
+            <a
+              href="allstarListItem.html"
+              class="text-center text-decoration-none pb-2 btn-outline-dark text-dark"
+              >MORE</a
+            >
           </div>
         </div>
       </div>
@@ -377,7 +380,7 @@
         <a
           type="button"
           href="allstarList.html"
-          class="btn btn-outline-nbaBlue rounded-pill my-5 fs-5 sellbtn_Rwd"
+          class="btn btn-outline-dark rounded-pill my-5 fs-5 sellbtn_Rwd"
           >SEE MORE LISTS</a
         >
       </div>
@@ -400,7 +403,7 @@
               <p>jersey fundraising</p>
               <a
                 href="customzied.html"
-                class="btn btn-outline-nbaBlue rounded-pill fs-5"
+                class="btn btn-outline-dark rounded-pill fs-5"
                 >SEND MESSAGE</a
               >
             </div>
@@ -417,7 +420,7 @@
               <p>customized jersey</p>
               <a
                 href="customzied.html"
-                class="btn btn-outline-nbaBlue rounded-pill fs-5"
+                class="btn btn-outline-dark rounded-pill fs-5"
                 >SEND MESSAGE</a
               >
             </div>
@@ -440,7 +443,7 @@
         />
       </a>
 
-      <div class="footer bg-nbaBlue text-center text-white py-2 pt-4">
+      <div class="footer bg-dark text-center text-white py-2 pt-4">
         <p>Copyright © 2022 JerseyTown.All rights reserved.</p>
       </div>
     </div>
