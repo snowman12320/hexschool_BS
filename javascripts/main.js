@@ -30,7 +30,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl);
 });
 
-//產品圖
+//產品圖 以CSS取代 避免顫抖
 // $(document).ready(function () {
 //   $(".card-img").hover(function (e) {
 //     var choose = e.target.dataset.num;
@@ -43,7 +43,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 // });
 // });
 
-//排行圖
+//排行圖  以CSS取代 避免顫抖
 // $(document).ready(function () {
 //   $(".card-img-top").mouseenter(function (e) {
 //     var choose = e.target.dataset.num;

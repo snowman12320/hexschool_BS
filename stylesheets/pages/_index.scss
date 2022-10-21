@@ -97,10 +97,6 @@
   justify-content: end;
 }
 
-.sell_more a:hover {
-  font-weight: bold;
-}
-
 .rank_card {
   // 連動hover 不用加& 但要用: 不能用. 也不用~
   :hover .sell_more a {
@@ -129,12 +125,11 @@
   :hover .card-img-top {
     display: none;
   }
-
   .img_back {
     width: 100%;
     height: 250px;
     background-color: #fff;
-    border-radius: 1%;
+    border-radius: 3%;
   }
   .card-text {
     white-space: nowrap; /*段落不自動換行*/
@@ -145,7 +140,7 @@
     display: box;
     -webkit-box-orient: vertical;
   }
-  a::after {
+  a:after {
     content: "";
     position: absolute;
     top: 90%;
@@ -153,6 +148,9 @@
     background: $gray-500;
     width: 80%;
     height: 1px;
+  }
+  :hover a {
+    color: $nbaRed;
   }
 }
 @include sellbtn_Rwd;

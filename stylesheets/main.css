@@ -13251,10 +13251,6 @@ textarea.form-control-lg {
   justify-content: end;
 }
 
-.sell_more a:hover {
-  font-weight: bold;
-}
-
 .rank_card :hover .sell_more a {
   font-weight: bold;
   color: #cc2b31;
@@ -13285,7 +13281,7 @@ textarea.form-control-lg {
   width: 100%;
   height: 250px;
   background-color: #fff;
-  border-radius: 1%;
+  border-radius: 3%;
 }
 .rank_card .card-text {
   white-space: nowrap; /*段落不自動換行*/
@@ -13296,7 +13292,7 @@ textarea.form-control-lg {
   display: box;
   -webkit-box-orient: vertical;
 }
-.rank_card a::after {
+.rank_card a:after {
   content: "";
   position: absolute;
   top: 90%;
@@ -13304,6 +13300,9 @@ textarea.form-control-lg {
   background: #adb5bd;
   width: 80%;
   height: 1px;
+}
+.rank_card :hover a {
+  color: #cc2b31;
 }
 
 @media (max-width: 1040px) {
