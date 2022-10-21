@@ -3,14 +3,18 @@
 @import "../helpers/variables";
 @import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
 
-* {
-  font-family: "Rubik", sans-serif;
-}
-
 .allstaritem_back {
   border-radius: 2%;
   background-image: url(../../nbaWeb/1126209.png);
   height: 424px;
+}
+.small_card {
+  &:hover .card {
+    box-shadow: 0 20px 20px #dddd;
+  }
+  &:hover .btn-nbaBlue {
+    background-color: blue;
+  }
 }
 
 .btnRwd {
@@ -28,5 +32,10 @@
     a {
       font-size: 48px;
     }
+  }
+}
+@include minipc() {
+  .imgRwd {
+    left: 40%;
   }
 }

@@ -13174,6 +13174,9 @@ textarea.form-control-lg {
   border-radius: 50%;
   background-color: #fff;
 }
+.navbar .navbar-brand :hover h1, .navbar .navbar-brand :hover .h1 {
+  color: #cc2b31 !important;
+}
 .navbar h1, .navbar .h1 {
   color: #000 !important;
 }
@@ -13240,9 +13243,8 @@ textarea.form-control-lg {
   justify-content: end;
 }
 
-.rank_card :hover .sell_more a {
-  font-weight: bold;
-  color: #cc2b31;
+.rank_card :hover a {
+  color: #0253a5 !important;
 }
 .rank_card :hover .card {
   box-shadow: 0 20px 20px rgba(221, 221, 221, 0.8666666667);
@@ -13261,6 +13263,23 @@ textarea.form-control-lg {
 .rank_card :hover .img_back003 {
   background-image: url(../../nbaWeb/tyler-martoia-nVpT1jeu3f0-unsplash.jpg);
   background-position: center center;
+  background-size: cover;
+}
+.rank_card :hover .img_back004 {
+  background-image: url(../../nbaWeb/PNG-images-NBA-Players-58png.png);
+  background-position: bottom center;
+  background-size: none;
+  background-repeat: no-repeat;
+}
+.rank_card :hover .img_back005 {
+  background-image: url(../../nbaWeb/PNG-images-NBA-Players-60png.png);
+  background-position: bottom center;
+  background-size: fill;
+  background-repeat: no-repeat;
+}
+.rank_card :hover .img_back006 {
+  background-image: url(../../nbaWeb/PNG-images-NBA-Players-70png.png);
+  background-position: bottom center;
   background-size: cover;
 }
 .rank_card :hover .card-img-top {
@@ -13441,34 +13460,6 @@ button.learn-more:active::before {
     display: none;
   }
 }
-* {
-  font-family: "Rubik", sans-serif;
-}
-
-.hover_img.img_back004 {
-  background-image: url(../../nbaWeb/PNG-images-NBA-Players-58png.png);
-  background-position: bottom center;
-  background-size: none;
-}
-
-.hover_img.img_back005 {
-  background-image: url(../../nbaWeb/PNG-images-NBA-Players-60png.png);
-  background-position: bottom center;
-  background-size: cover;
-}
-
-.hover_img.img_back006 {
-  background-image: url(../../nbaWeb/PNG-images-NBA-Players-70png.png);
-  background-position: bottom center;
-  background-size: cover;
-}
-
-a {
-  text-decoration: none;
-  font-size: 20px;
-}
-
-/* GENERAL STYLES */
 .pagination {
   padding: 30px 0;
 }
@@ -13483,32 +13474,27 @@ a {
   display: inline-block;
   padding: 10px 18px;
   color: #3a3a3a;
+  text-decoration: none;
+  font-size: 20px;
 }
-
-/* ONE sample*/
-.p1 a {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  padding: 0;
-  text-align: center;
-}
-.p1 a:hover {
+.pagination a:hover {
   color: #0253a5;
 }
-
-.p1 a.is-active {
+.pagination a:active {
   color: #0253a5;
-}
-
-* {
-  font-family: "Rubik", sans-serif;
 }
 
 .allstaritem_back {
   border-radius: 2%;
   background-image: url(../../nbaWeb/1126209.png);
   height: 424px;
+}
+
+.small_card:hover .card {
+  box-shadow: 0 20px 20px rgba(221, 221, 221, 0.8666666667);
+}
+.small_card:hover .btn-nbaBlue {
+  background-color: blue;
 }
 
 .btnRwd {
@@ -13524,6 +13510,11 @@ a {
   }
   .btnRwd a {
     font-size: 48px;
+  }
+}
+@media (min-width: 1040px) {
+  .imgRwd {
+    left: 40%;
   }
 }
 .aside a {

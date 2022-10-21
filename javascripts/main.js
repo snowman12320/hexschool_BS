@@ -10,6 +10,12 @@ $(document).ready(function () {
     $(this).toggleClass("active");
   });
 });
+// 故事分頁的
+$(document).ready(function () {
+  $(".pagination a").click(function () {
+    $(this).toggleClass("active");
+  });
+});
 
 //小圖示
 function hover_custom(element) {
