@@ -1,3 +1,16 @@
+// 導覽列的
+$(document).ready(function () {
+  $(".nav-link").click(function () {
+    $(this).toggleClass("active");
+  });
+});
+// 產品側欄的
+$(document).ready(function () {
+  $(".aside a").click(function () {
+    $(this).toggleClass("active");
+  });
+});
+
 //小圖示
 function hover_custom(element) {
   element.setAttribute(

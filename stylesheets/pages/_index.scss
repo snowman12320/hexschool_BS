@@ -48,6 +48,9 @@
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
+  :active {
+    color: $nbaRed;
+  }
 }
 
 .banner {
@@ -83,19 +86,15 @@
   border-radius: 3%;
   color: white;
   padding-left: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
   background-image: linear-gradient(180deg, rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.8));
   display: none;
 }
-.hover_img {
-  .new_product_img {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-  }
+
+.card-img:hover ~ .new_product_img {
+  display: block !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
 .sell_more a:hover {
