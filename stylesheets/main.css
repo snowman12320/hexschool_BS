@@ -13244,8 +13244,8 @@ textarea.form-control-lg {
   display: none;
 }
 
-.card-img:hover ~ .new_product_img {
-  display: block !important;
+.card:hover .new_product_img {
+  display: block;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -13255,37 +13255,37 @@ textarea.form-control-lg {
   font-weight: bold;
 }
 
-.rank_card :hover ~ .sell_more a {
+.rank_card :hover .sell_more a {
   font-weight: bold;
   color: #cc2b31;
 }
-.rank_card :hover ~ .card {
+.rank_card :hover .card {
   box-shadow: 0 20px 20px rgba(221, 221, 221, 0.8666666667);
 }
-.rank_card :hover ~ .img_back001 {
+.rank_card :hover .img_back001 {
   background-image: url(../../nbaWeb/olivier-collet-H7cIqigZOBo-unsplash.jpg);
   background-position: center center;
   background-size: cover;
 }
-.rank_card :hover ~ .card-img-top {
+.rank_card :hover .img_back002 {
+  background-image: url(../../nbaWeb/PNG-images-NBA-Players-3png.png);
+  background-position: center center;
+  background-size: none;
+  background-repeat: no-repeat;
+}
+.rank_card :hover .img_back003 {
+  background-image: url(../../nbaWeb/tyler-martoia-nVpT1jeu3f0-unsplash.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.rank_card :hover .card-img-top {
   display: none;
 }
 .rank_card .img_back {
   width: 100%;
   height: 250px;
   background-color: #fff;
-  border-radius: 5%;
-}
-.rank_card .hover_img.img_back002 {
-  background-image: url(../../nbaWeb/PNG-images-NBA-Players-3png.png);
-  background-position: center center;
-  background-size: none;
-  background-repeat: no-repeat;
-}
-.rank_card .hover_img.img_back003 {
-  background-image: url(../../nbaWeb/tyler-martoia-nVpT1jeu3f0-unsplash.jpg);
-  background-position: center center;
-  background-size: cover;
+  border-radius: 1%;
 }
 .rank_card .card-text {
   white-space: nowrap; /*段落不自動換行*/

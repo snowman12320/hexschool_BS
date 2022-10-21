@@ -89,9 +89,9 @@
   background-image: linear-gradient(180deg, rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.8));
   display: none;
 }
-
-.card-img:hover ~ .new_product_img {
-  display: block !important;
+// 要使用外面那層的CLS(.card) 不然本身圖片CLS(.card-img)會沒有效果 flex排版要放在hover裡 才不會重置跑版
+.card:hover .new_product_img {
+  display: block;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -102,20 +102,31 @@
 }
 
 .rank_card {
-  // 連動hover 不用加&
-  :hover ~ .sell_more a {
+  // 連動hover 不用加& 但要用: 不能用. 也不用~
+  :hover .sell_more a {
     font-weight: bold;
     color: $nbaRed;
   }
-  :hover ~ .card {
+  :hover .card {
     box-shadow: 0 20px 20px #dddd;
   }
-  :hover ~ .img_back001 {
+  :hover .img_back001 {
     background-image: url(../../nbaWeb/olivier-collet-H7cIqigZOBo-unsplash.jpg);
     background-position: center center;
     background-size: cover;
   }
-  :hover ~ .card-img-top {
+  :hover .img_back002 {
+    background-image: url(../../nbaWeb/PNG-images-NBA-Players-3png.png);
+    background-position: center center;
+    background-size: none;
+    background-repeat: no-repeat;
+  }
+  :hover .img_back003 {
+    background-image: url(../../nbaWeb/tyler-martoia-nVpT1jeu3f0-unsplash.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+  :hover .card-img-top {
     display: none;
   }
 
@@ -123,27 +134,8 @@
     width: 100%;
     height: 250px;
     background-color: #fff;
-    border-radius: 5%;
+    border-radius: 1%;
   }
-  // .hover_img.img_back001 {
-  //   background-image: url(../../nbaWeb/olivier-collet-H7cIqigZOBo-unsplash.jpg);
-  //   background-position: center center;
-  //   background-size: cover;
-  // }
-  .hover_img.img_back002 {
-    background-image: url(../../nbaWeb/PNG-images-NBA-Players-3png.png);
-    background-position: center center;
-    background-size: none;
-    background-repeat: no-repeat;
-  }
-  .hover_img.img_back003 {
-    background-image: url(../../nbaWeb/tyler-martoia-nVpT1jeu3f0-unsplash.jpg);
-    background-position: center center;
-    background-size: cover;
-  }
-  // .hover_img .card-img-top {
-  //   display: none;
-  // }
   .card-text {
     white-space: nowrap; /*段落不自動換行*/
     overflow: hidden; /*超過寬度隱藏*/
