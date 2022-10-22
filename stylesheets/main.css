@@ -1,11 +1,6 @@
 @charset "UTF-8";
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 @import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -13200,11 +13195,11 @@ textarea.form-control-lg {
   color: #cc2b31;
 }
 .navbar .navbar-nav .nav_pill:hover {
-  box-shadow: 0 8px 1px rgb(0, 0, 0);
+  box-shadow: 0 5px 1px rgb(0, 0, 0);
 }
 
 .nav_shadow {
-  box-shadow: 0 2px 2px -2px gray;
+  box-shadow: 0 2px 2px -2px #adb5bd;
 }
 
 .banner_arrow {
@@ -13275,35 +13270,35 @@ textarea.form-control-lg {
 .rank_card :hover .card {
   box-shadow: 0 20px 20px rgba(221, 221, 221, 0.8666666667);
 }
-.rank_card :hover .img_back001 {
+.rank_card :hover .img_back_kobe {
   background-image: url(../../nbaWeb/olivier-collet-H7cIqigZOBo-unsplash.jpg);
   background-position: center center;
   background-size: cover;
 }
-.rank_card :hover .img_back002 {
+.rank_card :hover .img_back_lebron {
   background-image: url(../../nbaWeb/PNG-images-NBA-Players-3png.png);
   background-position: center center;
   background-size: none;
   background-repeat: no-repeat;
 }
-.rank_card :hover .img_back003 {
+.rank_card :hover .img_back_curry {
   background-image: url(../../nbaWeb/tyler-martoia-nVpT1jeu3f0-unsplash.jpg);
   background-position: center center;
   background-size: cover;
 }
-.rank_card :hover .img_back004 {
+.rank_card :hover .img_back_westbrook {
   background-image: url(../../nbaWeb/PNG-images-NBA-Players-58png.png);
   background-position: bottom center;
   background-size: none;
   background-repeat: no-repeat;
 }
-.rank_card :hover .img_back005 {
+.rank_card :hover .img_back_irving {
   background-image: url(../../nbaWeb/PNG-images-NBA-Players-60png.png);
   background-position: bottom center;
   background-size: fill;
   background-repeat: no-repeat;
 }
-.rank_card :hover .img_back006 {
+.rank_card :hover .img_back_wall {
   background-image: url(../../nbaWeb/PNG-images-NBA-Players-70png.png);
   background-position: bottom center;
   background-size: cover;
