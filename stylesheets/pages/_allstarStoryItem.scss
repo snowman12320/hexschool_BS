@@ -21,9 +21,9 @@
   width: 90%;
   // width: inherit;
 }
-@include pc() {
+@include maxpc() {
   .imgRwd {
-    left: 30%;
+    left: 40% !important;
   }
   .fsRwd {
     font-size: 32px;
@@ -36,6 +36,6 @@
 }
 @include minipc() {
   .imgRwd {
-    left: 40%;
+    left: 0%;
   }
 }

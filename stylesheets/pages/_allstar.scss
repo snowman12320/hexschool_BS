@@ -120,7 +120,7 @@ button {
   background-position: center center;
   background-size: cover;
 }
-@include pad() {
+@include maxpad() {
   .allstar_banner {
     background-image: url(../../nbaWeb/160121164737-all-star-starters-graphic-1280-012116.home-t3.jpg);
     width: 100%;
@@ -137,7 +137,7 @@ button {
   background-size: contain;
   background-repeat: no-repeat;
 }
-@include pc() {
+@include maxbigpc() {
   .allstar_bg {
     width: 400px;
     height: 400px;

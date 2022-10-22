@@ -20,7 +20,7 @@
 
 // 大 按鈕正常 小 按鈕放大100%
 @mixin sellbtn_Rwd() {
-  @include pc() {
+  @include maxpc() {
     .sellbtn_Rwd {
       width: 100%;
     }

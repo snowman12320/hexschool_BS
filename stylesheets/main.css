@@ -13435,7 +13435,7 @@ button.learn-more:active::before {
   background-repeat: no-repeat;
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1185px) {
   .allstar_bg {
     width: 400px;
     height: 400px;
@@ -13490,7 +13490,7 @@ button.learn-more:active::before {
 
 @media (max-width: 1040px) {
   .imgRwd {
-    left: 30%;
+    left: 40% !important;
   }
   .fsRwd {
     font-size: 32px;
@@ -13501,7 +13501,7 @@ button.learn-more:active::before {
 }
 @media (min-width: 1040px) {
   .imgRwd {
-    left: 40%;
+    left: 0%;
   }
 }
 .aside a {
@@ -13530,10 +13530,6 @@ button.learn-more:active::before {
     text-align: center;
   }
 }
-* {
-  font-family: "Rubik", sans-serif;
-}
-
 .custom_banner {
   background-image: url(../../nbaWeb/abhay-siby-mathew-LmEuUMbd5Rw-unsplash.jpg);
   width: 100%;
