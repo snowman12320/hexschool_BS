@@ -13212,19 +13212,6 @@ textarea.form-control-lg {
     background-position: top center;
   }
 }
-.money_img {
-  max-width: 548px;
-}
-
-.money .money_service {
-  font: normal normal bold 24px/39px Kalam;
-  color: #f9c745;
-}
-.money .money_title {
-  color: #3a3a3a;
-  font: normal normal bold 24px/39px Kalam;
-}
-
 .new_product_img {
   width: 100%;
   height: 312px;
