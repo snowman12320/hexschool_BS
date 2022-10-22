@@ -77,6 +77,25 @@
   }
 }
 
+.love_img:hover {
+  opacity: 50%;
+}
+// 要用important 因為外層有用了 會被覆蓋 導致定位在整個版面上
+.img_relative {
+  position: relative !important;
+  display: flex !important;
+}
+.love_img_back {
+  background-image: url("../../nbaWeb/Minimal-Magnifying-Glass.svg");
+  width: 250px;
+  height: 250px;
+  position: absolute !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-self: center;
+  justify-content: center !important;
+}
+
 .new_product_img {
   width: 100%;
   height: 312px;
@@ -88,7 +107,7 @@
   display: none;
 }
 // 要使用外面那層的CLS(.card) 不然本身圖片CLS(.card-img)會沒有效果 flex排版要放在hover裡 才不會重置跑版
-.card:hover .new_product_img {
+.product_hover:hover .new_product_img {
   display: block;
   display: flex;
   flex-direction: column;
