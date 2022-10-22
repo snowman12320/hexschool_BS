@@ -16,7 +16,7 @@
 @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";
 //內建常用
-@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"; //內建icon
 @import "../node_modules/bootstrap/scss/images";
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
@@ -55,6 +55,10 @@
 @import "../node_modules/bootstrap/scss/utilities/api";
 
 //老師自訂component
+
+//第三方CDN
+@import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap"); //字型
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"); //font-awesome文字格式icon 可連動
 
 //學生pages
 @import "./pages/index";

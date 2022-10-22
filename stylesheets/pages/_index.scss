@@ -1,7 +1,6 @@
 @import "../utils/mix";
 @import "../utils/function";
 @import "../helpers/variables";
-@import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
 
 * {
   font-family: "Rubik", sans-serif;
@@ -58,7 +57,7 @@
   bottom: 5%;
   left: 45%;
   color: $white;
-  animation: banner_arrow 3s infinite;
+  animation: banner_arrow 1s infinite;
 }
 @keyframes banner_arrow {
   0% {

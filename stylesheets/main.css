@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 @import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -13207,8 +13208,8 @@ textarea.form-control-lg {
   bottom: 5%;
   left: 45%;
   color: #fff;
-  -webkit-animation: banner_arrow 3s infinite;
-          animation: banner_arrow 3s infinite;
+  -webkit-animation: banner_arrow 1s infinite;
+          animation: banner_arrow 1s infinite;
 }
 
 @-webkit-keyframes banner_arrow {
