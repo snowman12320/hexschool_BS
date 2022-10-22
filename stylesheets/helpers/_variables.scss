@@ -51,6 +51,7 @@ $nbaBlue: #0253a5;
 $nbaRed: #cc2b31;
 $pickBlack: #3a3a3a;
 $pickYellow: #f9c745;
+$shadow: #dddd;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -303,11 +304,11 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary: $purple !default;
+$primary: $blue !default;
 $secondary: #d99ae7; //$gray-600 !default;
 $success: yellowgreen !default;
 $info: $cyan !default;
-$warning: red !default;
+$warning: $yellow !default;
 $danger: $red !default;
 $light: rgb(231, 231, 249) !default;
 $dark: $gray-900 !default;
@@ -315,6 +316,7 @@ $nbaBlue: $nbaBlue;
 $nbaRed: $nbaRed;
 $pickBlack: $pickBlack;
 $pickYellow: $pickYellow;
+$shadow: $shadow;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -788,8 +790,8 @@ $btn-focus-box-shadow: $input-btn-focus-box-shadow !default;
 $btn-disabled-opacity: 0.65 !default;
 $btn-active-box-shadow: inset 0 3px 5px rgba($black, 0.125) !default;
 
-$btn-link-color: var(--#{$prefix}link-color) !default;
-$btn-link-hover-color: var(--#{$prefix}link-hover-color) !default;
+$btn-link-color: $white; //var(--#{$prefix}link-color) !default;
+$btn-link-hover-color: $nbaRed; //var(--#{$prefix}link-hover-color) !default;
 $btn-link-disabled-color: $gray-600 !default;
 
 // Allows for customizing button radius independently from global border radius

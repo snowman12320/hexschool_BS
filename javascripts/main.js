@@ -1,3 +1,4 @@
+// active
 // 導覽列的
 $(document).ready(function () {
   $(".nav-link").click(function () {
@@ -17,6 +18,25 @@ $(document).ready(function () {
   });
 });
 
+//導覽陰影
+function showNavshadow() {
+  if ($(this).scrollTop() > 100) {
+    $(".navbar").addClass("nav_shadow");
+  } else {
+    $(".navbar").removeClass("nav_shadow");
+  }
+}
+$(window).scroll(showNavshadow);
+// call to action
+function showArrow() {
+  if ($(this).scrollTop() > 100) {
+    $(".banner_arrow").hide();
+  } else {
+    $(".banner_arrow").show();
+  }
+}
+$(window).scroll(showArrow);
+
 //小圖示
 function hover_custom(element) {
   element.setAttribute(
@@ -35,31 +55,6 @@ var tooltipTriggerList = [].slice.call(
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl);
 });
-
-//產品圖 以CSS取代 避免顫抖
-// $(document).ready(function () {
-//   $(".card-img").hover(function (e) {
-//     var choose = e.target.dataset.num;
-//     $("body [data-num=" + choose + "]").toggleClass("hover_img");
-//   });
-// .mouseenter() + .mouseleave() 也可  /.mouseout() .mousemove() 應該是移動紀錄點
-// $(".card-img").mouseleave(function (e) {
-//   var choose = e.target.dataset.num;
-//   $("body [data-num=" + choose + "]").removeClass("hover_img");
-// });
-// });
-
-//排行圖  以CSS取代 避免顫抖
-// $(document).ready(function () {
-//   $(".card-img-top").mouseenter(function (e) {
-//     var choose = e.target.dataset.num;
-//     $("body [data-num=" + choose + "]").addClass("hover_img");
-//   });
-//   $(".card-img-top").mouseleave(function (e) {
-//     var choose = e.target.dataset.num;
-//     $("body [data-num=" + choose + "]").removeClass("hover_img");
-//   });
-// });
 
 //註冊驗證
 // Example starter JavaScript for disabling form submissions if there are invalid fields

@@ -24,7 +24,7 @@
 }
 @include maxpc() {
   .imgRwd {
-    left: 40% !important;
+    left: 40%;
   }
   .fsRwd {
     font-size: 32px;
@@ -37,6 +37,6 @@
 }
 @include minipc() {
   .imgRwd {
-    left: 0%;
+    left: 20%;
   }
 }

@@ -11,10 +11,10 @@
 }
 @mixin shadow {
   /* -x +x 軸  */
-  box-shadow: -1px 1px #dddd;
+  box-shadow: -1px 1px $shadow;
   /* 0x 3y 3px擴散 */
-  box-shadow: 0 3px 3px #dddd;
-  // box-shadow: x-位移 y-位移 blur-模糊的值(實心1~10) spread-擴散的值(範圍1-5) color-顏色(第四個透明度) inset-是否在內側(染色感)
+  box-shadow: 0 3px 3px $shadow;
+  // box-shadow: x-位移 y-位移 blur-模糊值(實心1~10) spread-擴散值(範圍1-5) color-顏色(第四個透明度) inset-是否在內側(染色感)
   box-shadow: 0 10px 1px rgba(0, 0, 0, 0.6);
 }
 
