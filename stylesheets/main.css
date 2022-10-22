@@ -13481,7 +13481,8 @@ button.learn-more:active::before {
   box-shadow: 0 20px 20px rgba(221, 221, 221, 0.8666666667);
 }
 .small_card:hover .btn-nbaBlue {
-  background-color: blue;
+  background-color: var(--bs-btn-active-bg);
+  border-color: var(--bs-btn-active-border-color);
 }
 
 .btnRwd {
