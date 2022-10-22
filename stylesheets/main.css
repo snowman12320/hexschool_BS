@@ -13209,7 +13209,7 @@ textarea.form-control-lg {
 
 .banner_arrow {
   position: absolute;
-  bottom: 0;
+  bottom: 5%;
   left: 45%;
   color: #fff;
   -webkit-animation: banner_arrow 3s infinite;
@@ -13342,16 +13342,12 @@ textarea.form-control-lg {
   }
 }
 .allstar_banner {
-  background-image: url(../../nbaWeb/banner3.jpg);
-  width: 100%;
   height: 600px;
-  background-position: center center;
-  background-size: cover;
 }
 
 @media (max-width: 768px) {
   .allstar_banner {
-    background-image: url(../../nbaWeb/160121164737-all-star-starters-graphic-1280-012116.home-t3.jpg);
+    background-image: url(../../nbaWeb/160121164737-all-star-starters-graphic-1280-012116.home-t3.jpg) !important;
     width: 100%;
     height: 400px;
     background-position: top center;
@@ -13404,7 +13400,6 @@ textarea.form-control-lg {
 
 .allstaritem_back {
   border-radius: 2%;
-  background-image: url(../../nbaWeb/1126209.png);
   height: 424px;
 }
 
@@ -13463,7 +13458,5 @@ textarea.form-control-lg {
   }
 }
 .custom_banner {
-  background-image: url(../../nbaWeb/abhay-siby-mathew-LmEuUMbd5Rw-unsplash.jpg);
-  width: 100%;
   height: 288px;
 }/*# sourceMappingURL=main.css.map */

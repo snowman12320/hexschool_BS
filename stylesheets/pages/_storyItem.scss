@@ -5,12 +5,11 @@
 
 .allstaritem_back {
   border-radius: 2%;
-  background-image: url(../../nbaWeb/1126209.png);
   height: 424px;
 }
 .small_card {
   &:hover .card {
-    box-shadow: 0 20px 20px #dddd;
+    box-shadow: 0 20px 20px $shadow;
   }
   &:hover .btn-nbaBlue {
     background-color: var(--bs-btn-active-bg);
@@ -20,7 +19,6 @@
 
 .btnRwd {
   width: 90%;
-  // width: inherit;
 }
 @include maxpc() {
   .imgRwd {
