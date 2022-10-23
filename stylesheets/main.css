@@ -13208,7 +13208,7 @@ textarea.form-control-lg {
 }
 
 .banner_arrow {
-  position: absolute;
+  position: fixed;
   bottom: 5%;
   left: 45%;
   color: #fff;
@@ -13216,6 +13216,11 @@ textarea.form-control-lg {
           animation: banner_arrow 1s infinite;
 }
 
+@media (max-width: 768px) {
+  .banner_arrow {
+    left: 40%;
+  }
+}
 @-webkit-keyframes banner_arrow {
   from {
     top: 450px;
@@ -13239,7 +13244,6 @@ textarea.form-control-lg {
     top: 500px;
   }
 }
-
 @keyframes banner_arrow {
   from {
     top: 450px;

@@ -57,11 +57,17 @@
 
 //箭頭動畫
 .banner_arrow {
-  position: absolute;
+  position: fixed;
   bottom: 5%;
   left: 45%;
+  // margin-left: auto;
   color: $white;
   animation: banner_arrow 1s infinite;
+}
+@include maxpad() {
+  .banner_arrow {
+    left: 40%;
+  }
 }
 @keyframes banner_arrow {
   from {
