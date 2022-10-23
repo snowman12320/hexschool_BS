@@ -67,7 +67,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link px-4 py-3" href="Story.html">Story</a>
+                <a class="nav-link px-4 py-3" href="story.html">Story</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link px-4 py-3" href="product.html">Product</a>
@@ -175,16 +175,21 @@
         <div
           class="col d-flex align-items-center justify-content-center me-md-5"
         >
-          <div class="img_relative">
-            <div class="love_img_back"></div>
+          <a
+            class="example-image-link position-relative d-flex justify-content-center align-items-center"
+            href="../nbaWeb/2-21325_nba-all-star-game-poster.jpg"
+            data-lightbox="example-1"
+            data-title="Optional caption."
+          >
             <img
-              class="of-cover w-100 love_img"
+              class="of-cover w-100 love_img example-image"
               height="486"
               width="648"
               src="../nbaWeb/andre-hunter-RPKdvPcYAUo-unsplash.jpg"
               alt="義賣球衣"
             />
-          </div>
+            <div class="love_img_back"></div>
+          </a>
         </div>
         <div class="col">
           <div class="money w-100">
@@ -221,8 +226,8 @@
       </div>
       <section class="row row-cols-2 row-cols-lg-4 g-4 px-3">
         <div class="col overflow-hidden">
-          <div class="card w-100 position-relation product_hover" data-num="1">
-            <div class="new_product_img">
+          <div class="card w-100 position-relation newproduct_img" data-num="1">
+            <div class="newproduct_cloth">
               <h6>Player</h6>
               <h4>Kobe Bryant</h4>
             </div>
@@ -237,8 +242,8 @@
           </div>
         </div>
         <div class="col">
-          <div class="card w-100 position-relation product_hover" data-num="2">
-            <div class="new_product_img">
+          <div class="card w-100 position-relation newproduct_img" data-num="2">
+            <div class="newproduct_cloth">
               <h6>Player</h6>
               <h4>Derrick Rose</h4>
             </div>
@@ -246,15 +251,15 @@
               data-num="2"
               height="312"
               width="312"
-              class="card-img of-cover"
+              class="card-img of-cover newproduct_img"
               src="nbaWeb/eddy-lackmann-6MmfmBJd8PE-unsplash.jpg"
               alt="new2"
             />
           </div>
         </div>
         <div class="col">
-          <div class="card w-100 position-relation product_hover" data-num="3">
-            <div class="new_product_img">
+          <div class="card w-100 position-relation newproduct_img" data-num="3">
+            <div class="newproduct_cloth">
               <h6>Player</h6>
               <h4>Kevin Durant</h4>
             </div>
@@ -262,15 +267,15 @@
               data-num="3"
               height="312"
               width="312"
-              class="card-img of-cover"
+              class="card-img of-cover newproduct_img"
               src="nbaWeb/mingxuan_leng-EXqK7oqvKhQ-unsplash.jpg"
               alt="new3"
             />
           </div>
         </div>
         <div class="col">
-          <div class="card w-100 position-relation product_hover" data-num="4">
-            <div class="new_product_img">
+          <div class="card w-100 position-relation newproduct_img" data-num="4">
+            <div class="newproduct_cloth">
               <h6>Player</h6>
               <h4>Stephen Curry</h4>
             </div>
@@ -278,7 +283,7 @@
               data-num="4"
               height="312"
               width="312"
-              class="card-img of-cover"
+              class="card-img of-cover newproduct_img"
               src="nbaWeb/tyler-martoia-nVpT1jeu3f0-unsplash.jpg"
               alt="new4"
             />
@@ -485,11 +490,14 @@
       integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
       crossorigin="anonymous"
     ></script>
+    <!-- 引入才有燈箱 可能上面的CDN有壓縮過 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+    <script src="./node_modules/lightbox2/dist/js/lightbox.min.js"></script>
     <script src="./javascripts/main.js"></script>
   </body>
 </html>

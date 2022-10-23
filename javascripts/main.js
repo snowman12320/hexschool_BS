@@ -1,21 +1,41 @@
 // active
 // 導覽列的
-$(document).ready(function () {
-  $(".nav-link").click(function () {
-    $(this).toggleClass("active");
-  });
+$(".navbar-nav").on("click", "a", function () {
+  $(this)
+    .addClass("active")
+    //   父層的
+    .parent()
+    //   同層的
+    .siblings()
+    //   子層的
+    .find("a")
+    .removeClass("active");
 });
 // 產品側欄的
-$(document).ready(function () {
-  $(".aside a").click(function () {
-    $(this).toggleClass("active");
-  });
+$(".aside").on("click", "a", function () {
+  $(this)
+    .addClass("active")
+    //   父層的
+    .parent()
+    //   同層的
+    .siblings()
+    //   子層的
+    .find("a")
+    .removeClass("active");
 });
 // 故事分頁的
-$(document).ready(function () {
-  $(".pagination a").click(function () {
-    $(this).toggleClass("active");
-  });
+$(".pagination").on("click", "a", function () {
+  $(this)
+    .addClass("active")
+    //   同層的
+    .siblings("a")
+    .removeClass("active");
+});
+
+// visited
+// 導覽列的
+$(".navbar-nav").on("click", "a", function () {
+  $(this).addClass("visited");
 });
 
 //導覽陰影

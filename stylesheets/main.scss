@@ -60,6 +60,9 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap"); //字型
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"); //font-awesome文字格式icon 可連動
 
+//第三方CSS
+@import "../node_modules/lightbox2/dist/css/lightbox.min.css";
+
 //學生pages
 @import "./pages/index";
 @import "./pages/rank";

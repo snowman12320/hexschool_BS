@@ -2,6 +2,7 @@
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 @import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+@import "../node_modules/lightbox2/dist/css/lightbox.min.css";
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -13176,7 +13177,7 @@ textarea.form-control-lg {
   width: 50px;
   height: 50px;
 }
-.navbar .navbar-brand:hover .nav_h1 {
+.navbar .navbar-brand :hover .nav_h1 {
   color: #cc2b31 !important;
 }
 .navbar .nav_h1 {
@@ -13192,8 +13193,11 @@ textarea.form-control-lg {
 .navbar .navbar-nav .nav-link:hover {
   color: #cc2b31;
 }
-.navbar :active {
+.navbar .navbar-nav .nav-link.active {
   color: #cc2b31;
+}
+.navbar .navbar-nav .nav-link.active .visited {
+  color: #adb5bd;
 }
 .navbar .navbar-nav .nav_pill:hover {
   box-shadow: 0 5px 1px rgb(0, 0, 0);
@@ -13213,6 +13217,9 @@ textarea.form-control-lg {
 }
 
 @-webkit-keyframes banner_arrow {
+  from {
+    top: 450px;
+  }
   0% {
     opacity: 0%;
   }
@@ -13227,10 +13234,16 @@ textarea.form-control-lg {
   }
   100% {
     opacity: 100%;
+  }
+  to {
+    top: 500px;
   }
 }
 
 @keyframes banner_arrow {
+  from {
+    top: 450px;
+  }
   0% {
     opacity: 0%;
   }
@@ -13246,28 +13259,28 @@ textarea.form-control-lg {
   100% {
     opacity: 100%;
   }
+  to {
+    top: 500px;
+  }
 }
+.love_img_back {
+  background-image: url("../../nbaWeb/Minimal-Magnifying-Glass.svg");
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
+}
+
 .love_img:hover {
   opacity: 50%;
 }
-
-.img_relative {
-  position: relative !important;
-  display: flex !important;
+.love_img:hover ~ .love_img_back {
+  display: block;
 }
 
-.love_img_back {
-  background-image: url("../../nbaWeb/Minimal-Magnifying-Glass.svg");
-  width: 250px;
-  height: 250px;
-  position: absolute !important;
-  background-repeat: no-repeat;
-  background-size: contain;
-  align-self: center;
-  justify-content: center !important;
-}
-
-.new_product_img {
+.newproduct_cloth {
   width: 100%;
   height: 312px;
   position: absolute;
@@ -13278,7 +13291,7 @@ textarea.form-control-lg {
   display: none;
 }
 
-.product_hover:hover .new_product_img {
+.newproduct_img:hover .newproduct_cloth {
   display: block;
   display: flex;
   flex-direction: column;

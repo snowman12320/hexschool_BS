@@ -18,7 +18,7 @@
     @include hide_text;
     width: 50px;
     height: 50px;
-    &:hover .nav_h1 {
+    :hover .nav_h1 {
       color: $nbaRed !important;
     }
   }
@@ -35,8 +35,12 @@
       color: $nbaRed;
     }
   }
-  :active {
+  // 要用"."active才有用..........
+  .navbar-nav .nav-link.active {
     color: $nbaRed;
+    .visited {
+      color: $gray-500;
+    }
   }
   .navbar-nav .nav_pill {
     // 要加& 不然會指一條直的陰影 第一層不用加 第二層要加&
@@ -60,6 +64,9 @@
   animation: banner_arrow 1s infinite;
 }
 @keyframes banner_arrow {
+  from {
+    top: 450px;
+  }
   0% {
     opacity: 0%;
   }
@@ -75,28 +82,36 @@
   100% {
     opacity: 100%;
   }
+  to {
+    top: 500px;
+  }
 }
 
-.love_img:hover {
-  opacity: 50%;
-}
-// 要用important 因為外層有用了 會被覆蓋 導致定位在整個版面上
-.img_relative {
-  position: relative !important;
-  display: flex !important;
-}
+// 要用important 因為外層有用了 會被覆蓋 導致定位在整個版面上 /關機拿掉後又好了.......
+// .img_relative {
+//   position: relative;
+//   display: flex;
+// }
 .love_img_back {
+  // 可用BS提供的SVG圖 但關機BUG而載圖
   background-image: url("../../nbaWeb/Minimal-Magnifying-Glass.svg");
-  width: 250px;
-  height: 250px;
-  position: absolute !important;
+  width: 150px;
+  height: 150px;
+  position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
-  align-self: center;
-  justify-content: center !important;
+  display: none;
+}
+// 要把與圖片同層的元素連動hover 就必須使用 ~ 不然就要另外包一層父層來hover啟動子層.........
+// 但newproduct_img父層card包起來所以還是要父層hover不用"~"
+.love_img:hover {
+  opacity: 50%;
+  ~ .love_img_back {
+    display: block;
+  }
 }
 
-.new_product_img {
+.newproduct_cloth {
   width: 100%;
   height: 312px;
   position: absolute;
@@ -107,7 +122,7 @@
   display: none;
 }
 // 要使用外面那層的CLS(.card) 不然本身圖片CLS(.card-img)會沒有效果 flex排版要放在hover裡 才不會重置跑版
-.product_hover:hover .new_product_img {
+.newproduct_img:hover .newproduct_cloth {
   display: block;
   display: flex;
   flex-direction: column;
