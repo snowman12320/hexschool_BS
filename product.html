@@ -6,18 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JerseyTown</title>
 
+    <meta name="description" content="用球衣蓋起來的城鎮" />
+    <meta
+      name="keywords "
+      content="球衣,城鎮,用球衣蓋的城鎮,Jersey,Town,JTown"
+    />
+    <meta property="og:title" content="JerseyTown" />
+    <meta property="og:description" content="球衣,用球衣蓋的城鎮,JerseyTown" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://JerseyTown.com.tw" />
+    <meta
+      property="og:image"
+      src="./nbaWeb/1588928235basketball-fire-logo-silhouette-freesvg.org.svg"
+    />
+    <!-- 標題欄： -->
+    <link rel="icon" href="./nbaWeb/favicon.ico" type="image/x-icon" />
+    <!-- 收藏夾： -->
+    <link rel="shortcut icon" href="./nbaWeb/favicon.ico" type="image/x-icon" /
+    >
+
     <link rel="stylesheet" href="./stylesheets/main.css" />
   </head>
 
   <body>
     <div class="container-xxl">
       <!-- 導覽 -->
-      <nav class="navbar navbar-expand-md navbar-light bg-light bg-nbaBlue">
+      <navbar class="navbar navbar-expand-md bg-white py-4">
         <div class="container-fluid d-flex justify-content-between">
           <div class="d-flex">
-            <a class="navbar-brand" href="#">JerseyTown</a>
+            <a class="navbar-brand" href="index.html">JerseyTown</a>
             <a class="align-self-center text-decoration-none" href="index.html">
-              <h1 class="fs-3 fw-bold mb-0 ms-n2">JTown</h1>
+              <h1 class="fs-3 fw-bold mb-0 ms-n2 nav_h1">JTown</h1>
             </a>
           </div>
           <!-- 漢堡 -->
@@ -40,25 +59,28 @@
             <!-- margin-start 自動推到底 好用排版方式 -->
             <ul class="navbar-nav ms-auto text-center">
               <li class="nav-item">
-                <a class="nav-link p-3" aria-current="page" href="index.html"
+                <a
+                  class="nav-link px-4 py-3"
+                  aria-current="page"
+                  href="index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link p-3" href="#Service">Service</a>
+                <a class="nav-link px-4 py-3" href="story.html">Story</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link p-3" href="newproduct.html">Product</a>
+                <a class="nav-link px-4 py-3" href="product.html">Product</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link p-3" href="allstar.html">Rank</a>
+                <a class="nav-link px-4 py-3" href="rank.html">Rank</a>
               </li>
-              <li class="hvr-grow-shadow ms-1">
+              <li class="ms-1">
                 <button
-                  class="learn-more btn btn-nbaRed rounded-pill text-white p-2 mt-lg-2 bg-nbaRed disable"
+                  class="btn btn-nbaRed rounded-pill mt-lg-2 bg-nbaBlue nav_pill"
                 >
                   <a
-                    class="text-decoration-none text-white fs-6"
+                    class="text-decoration-none fs-6 px-3 rounded-pill text-white"
                     type="submit"
                     href="customzied.html"
                   >
@@ -69,11 +91,10 @@
             </ul>
           </div>
         </div>
-      </nav>
+      </navbar>
       <!-- 最新球衣 -->
       <div
-        id="Product"
-        class="my-5 d-flex justify-content-center align-items-center"
+        class="my-5 d-flex justify-content-center align-items-center newproduct_margin border-3 border-nbaBlue border-top pt-5"
       >
         <h2>NEW</h2>
         <img
