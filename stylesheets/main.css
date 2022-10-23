@@ -13153,9 +13153,8 @@ textarea.form-control-lg {
 }
 @media (max-width: 1040px) {
   .allstar_banner {
-    height: 400px !important;
-    background-position: top center !important;
-    background-size: none !important;
+    background-image: url(../../nbaWeb/allstar-update-756.png) !important;
+    height: 600px !important;
   }
 }
 .allstar_bg {
