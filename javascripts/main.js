@@ -47,6 +47,7 @@ function showNavshadow() {
   }
 }
 $(window).scroll(showNavshadow);
+
 // call to action
 function showArrow() {
   if ($(this).scrollTop() > 100) {
@@ -100,3 +101,31 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     );
   });
 })();
+
+//視差滾動顯示
+$(document).ready(function () {
+  $(window).scroll(function () {
+    var scrollPos = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    // console.log(scrollPos, windowHeight);//捲動位置 和 視窗高度 互相都會變
+
+    // animated_right
+    $(".animated_right").each(function () {
+      var thisPos = $(this).offset().top;
+      if (windowHeight / 1.5 + scrollPos >= thisPos) {
+        $(this).addClass("fadeIn_right");
+      }
+    });
+    //animated_down
+    $(".animated_down").each(function () {
+      var thisPos = $(this).offset().top;
+      if (windowHeight / 1.5 + scrollPos >= thisPos) {
+        $(this).addClass("fadeIn_down");
+      }
+    });
+
+    // bg scroll
+    $("#profiles").css("background-position-y", -(scrollPos / 2) + "px");
+    $("#header-ele").css("transform", "translateY( " + scrollPos / 2 + "px )");
+  });
+});

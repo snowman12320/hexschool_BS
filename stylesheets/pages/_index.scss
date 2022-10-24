@@ -207,3 +207,26 @@
   }
 }
 @include sellbtn_Rwd;
+
+//視差浮現(右左)
+.animated_right {
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translateX(50px);
+}
+.fadeIn_right {
+  opacity: 1;
+  transform: translateX(0);
+}
+//視差浮現(下上)
+.animated_down {
+  // height: 0;
+  opacity: 0;
+  transition: all 2.5s;
+  transform: translateY(50px);
+}
+.fadeIn_down {
+  // height: 300;
+  opacity: 1;
+  transform: translateY(0);
+}
