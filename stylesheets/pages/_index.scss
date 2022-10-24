@@ -199,7 +199,7 @@
   .rank_a:after {
     content: "";
     position: absolute;
-    top: 90%;
+    top: 88%;
     left: 10%;
     background: $gray-500;
     width: 80%;
@@ -222,7 +222,7 @@
 .animated_down {
   // height: 0;
   opacity: 0;
-  transition: all 2.5s;
+  transition: all 1.5s;
   transform: translateY(50px);
 }
 .fadeIn_down {

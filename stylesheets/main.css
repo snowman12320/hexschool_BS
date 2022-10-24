@@ -13261,10 +13261,6 @@ textarea.form-control-lg {
     text-align: center;
   }
 }
-.newproduct_margin {
-  margin-top: 104px !important;
-}
-
 .custom_banner {
   height: 288px;
 }
@@ -13481,7 +13477,7 @@ textarea.form-control-lg {
 .rank_card .rank_a:after {
   content: "";
   position: absolute;
-  top: 90%;
+  top: 88%;
   left: 10%;
   background: #adb5bd;
   width: 80%;
@@ -13506,7 +13502,7 @@ textarea.form-control-lg {
 
 .animated_down {
   opacity: 0;
-  transition: all 2.5s;
+  transition: all 1.5s;
   transform: translateY(50px);
 }
 

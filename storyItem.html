@@ -76,7 +76,8 @@
       <!-- 銷售排行 -->
       <div
         id="Ranking"
-        class="d-flex justify-content-center align-items-center text-dark newproduct_margin border-3 border-nbaBlue border-top pt-5"
+        class="d-flex justify-content-center align-items-center text-dark border-3 border-nbaBlue border-top pt-5"
+        style="margin-top: 104px !important"
       >
         <h2>PLAYER</h2>
         <img
@@ -169,11 +170,11 @@
       </section>
 
       <!-- 徵才 -->
-      <div class="container-lg border-nbaRed border-top border-3">
+      <section class="container-lg border-nbaBlue border-top border-3">
         <div
           class="row row-cols-1 row-cols-lg-2 d-flex flex-column flex-md-row justify-content-center align-items-center mb-5 mt-5 gap-0"
         >
-          <div class="col d-flex justify-content-center mb-3 mb-md-0">
+          <div class="col d-flex justify-content-center mb-3 mb-lg-0">
             <!-- ms-auto 可推動本身寬度 -->
             <!-- 不用設定小於md 要設定0 就不會在RWD跑版 ~~~~-->
             <img
@@ -185,7 +186,9 @@
             <div class="">
               <h3>JOIN TEAM</h3>
               <p>jersey fundraising</p>
-              <a href="" class="btn btn-outline-nbaBlue rounded-pill fs-5"
+              <a
+                href="customzied.html"
+                class="btn btn-outline-dark rounded-pill fs-5"
                 >SEND MESSAGE</a
               >
             </div>
@@ -200,36 +203,34 @@
             <div class="me-lg-auto">
               <h3>JOIN TEAM</h3>
               <p>customized jersey</p>
-              <a href="" class="btn btn-outline-nbaBlue rounded-pill fs-5"
+              <a
+                href="customzied.html"
+                class="btn btn-outline-dark rounded-pill fs-5"
                 >SEND MESSAGE</a
               >
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- 小圖示 -->
-      <div class="position-relation">
-        <a href="#">
-          <!--style要加; -->
-          <img
-            style="z-index: 10"
-            onmouseover="hover_custom(this);"
-            onmouseout="unhover_custom(this);"
-            src="./nbaWeb/silhouette-basket-05.svg"
-            alt=""
-            height="150"
-            width="150"
-            class="custom_img_after position-fixed bottom-0 end-0"
-            data-bs-toggle="tooltip"
-            data-bs-placement="top"
-            title="Let's customized jersey !"
-          />
-        </a>
-      </div>
+      <a href="customzied.html">
+        <img
+          onmouseover="hover_custom(this);"
+          onmouseout="unhover_custom(this);"
+          src="./nbaWeb/silhouette-basket-05.svg"
+          alt=""
+          height="150"
+          width="150"
+          class="custom_img_after position-fixed bottom-0 end-0 me-5"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Let's customized jersey !"
+        />
+      </a>
 
-      <div class="footer bg-nbaRed text-center text-white py-2 pt-4">
+      <footer class="footer bg-dark text-center text-white py-2 pt-4">
         <p>Copyright © 2022 JerseyTown.All rights reserved.</p>
-      </div>
+      </footer>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
