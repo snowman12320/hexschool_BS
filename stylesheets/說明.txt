@@ -5,3 +5,5 @@ npm install bootstrap 不能大寫
 
 npm i bootstrap-icons
 
+//package.json 安裝 node_module/
+npm install
