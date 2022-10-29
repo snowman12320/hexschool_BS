@@ -1,0 +1,10 @@
+
+//安裝BS
+npm init 一直enter
+npm install bootstrap 不能大寫
+
+npm i bootstrap-icons
+
+//package.json 安裝 node_module/
+//靜態網頁不能引入這個資料夾需刪除 有使用忽略 需移出相關檔後引入 本地可以用 要先重新安裝
+npm install

@@ -1,7 +1,0 @@
-
-//安裝BS
-npm init 一直enter
-npm install bootstrap 不能大寫
-
-npm i bootstrap-icons
-
