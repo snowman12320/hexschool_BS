@@ -29,85 +29,85 @@
   </head>
 
   <body>
-    <div class="container-xxl">
-      <!-- 導覽 -->
-      <navbar class="navbar navbar-expand-md bg-white py-4">
-        <div class="container-fluid d-flex justify-content-between">
-          <div class="d-flex">
-            <a class="navbar-brand" href="index.html">JerseyTown</a>
-            <a class="align-self-center text-decoration-none" href="index.html">
-              <h1 class="fs-3 fw-bold mb-0 ms-n2 nav_h1">JTown</h1>
-            </a>
-          </div>
-          <!-- 漢堡 -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!--  -->
-          <div
-            class="collapse navbar-collapse mb-3 mb-md-0"
-            id="navbarSupportedContent"
-          >
-            <!-- margin-start 自動推到底 好用排版方式 -->
-            <ul class="navbar-nav ms-auto text-center">
-              <li class="nav-item">
-                <a
-                  class="nav-link px-4 py-3"
-                  aria-current="page"
-                  href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-4 py-3" href="story.html">Story</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-4 py-3" href="product.html">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-4 py-3" href="rank.html">Rank</a>
-              </li>
-              <li class="ms-1">
-                <button
-                  class="btn btn-nbaRed rounded-pill mt-lg-2 bg-nbaBlue nav_pill"
-                >
-                  <a
-                    class="text-decoration-none fs-6 px-3 rounded-pill text-white"
-                    type="submit"
-                    href="customzied.html"
-                  >
-                    Customized
-                  </a>
-                </button>
-              </li>
-            </ul>
-          </div>
+    <!-- 導覽 -->
+    <navbar class="navbar navbar-expand-md bg-white py-4">
+      <div class="container-fluid d-flex justify-content-between">
+        <div class="d-flex">
+          <a class="navbar-brand" href="index.html">JerseyTown</a>
+          <a class="align-self-center text-decoration-none" href="index.html">
+            <h1 class="fs-3 fw-bold mb-0 ms-n2 nav_h1">JTown</h1>
+          </a>
         </div>
-      </navbar>
-      <!-- banner -->
-      <section
-        class="custom_banner bgp-top bgs-cover w-100"
-        style="
-          background-image: url(nbaWeb/abhay-siby-mathew-LmEuUMbd5Rw-unsplash.jpg);
-          margin-top: 104px !important;
-        "
-      ></section>
+        <!-- 漢堡 -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--  -->
+        <div
+          class="collapse navbar-collapse mb-3 mb-md-0"
+          id="navbarSupportedContent"
+        >
+          <!-- margin-start 自動推到底 好用排版方式 -->
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <a
+                class="nav-link px-4 py-3"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4 py-3" href="story.html">Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4 py-3" href="product.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4 py-3" href="rank.html">Rank</a>
+            </li>
+            <li class="ms-1">
+              <button
+                class="btn btn-nbaRed rounded-pill mt-lg-2 bg-nbaBlue nav_pill"
+              >
+                <a
+                  class="text-decoration-none fs-6 px-3 rounded-pill text-white active"
+                  type="submit"
+                  href="customzied.html"
+                >
+                  Customized
+                </a>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </navbar>
+    <!-- banner -->
+    <section
+      class="custom_banner bgp-top bgs-cover w-100"
+      style="
+        background-image: url(nbaWeb/abhay-siby-mathew-LmEuUMbd5Rw-unsplash.jpg);
+        margin-top: 104px !important;
+      "
+    ></section>
+    <div class="container-xxl">
       <!-- 註冊客製化球衣 -->
       <form
         class="card py-5 px-4 col-md-5 needs-validation w-75 mx-auto my-5 shadow border-5 border-nbaBlue border-top border-start-0 border-end-0 border-bottom-0"
         novalidate
       >
         <h2 class="text-center fs-4 mb-5">CUSTOMZIED ORDER LIST</h2>
-        <div class="row g-5">
-          <div class="col-md-6 me-0">
+        <main class="row g-4">
+          <section class="col-md-6 me-0">
             <label for="validationServer01" class="form-label">Last name</label>
             <input
               type="text"
@@ -117,8 +117,8 @@
               required
             />
             <div class="valid-feedback">Looks good!</div>
-          </div>
-          <div class="col-md-6">
+          </section>
+          <section class="col-md-6">
             <label for="validationServer02" class="form-label"
               >First name</label
             >
@@ -130,8 +130,8 @@
               required
             />
             <div class="valid-feedback">Looks good!</div>
-          </div>
-          <div class="col-md-12">
+          </section>
+          <section class="col-md-12">
             <label for="validationServer03" class="form-label">Cellphone</label>
             <input
               type="tel"
@@ -140,16 +140,16 @@
               name="Cellphone"
               required
             />
-          </div>
+          </section>
 
-          <div class="col-md-6">
+          <section class="col-md-6">
             <label for="validationCustom04" class="form-label">Address</label>
             <select class="form-select" id="validationCustom04" required>
               <option selected disabled value="">Choose City</option>
               <option value="123">...</option>
             </select>
-          </div>
-          <div class="col-md-6">
+          </section>
+          <section class="col-md-6">
             <label
               for="validationCustom05"
               class="form-label fs-0"
@@ -160,8 +160,8 @@
               <option selected disabled value="">Choose State</option>
               <option value="123">...</option>
             </select>
-          </div>
-          <div class="col-12">
+          </section>
+          <section class="col-12">
             <input
               type="text"
               class="form-control"
@@ -170,9 +170,9 @@
               name="detailaddress"
               required
             />
-          </div>
+          </section>
 
-          <div class="col-md-12">
+          <section class="col-md-12">
             <label for="validationCustom06" class="form-label fs-0"
               >Designer</label
             >
@@ -180,16 +180,16 @@
               <option selected disabled value="">Choose Designer</option>
               <option value="123">...</option>
             </select>
-          </div>
-          <div class="col-md-12">
+          </section>
+          <section class="col-md-12">
             <label for="validationCustom07" class="form-label fs-0">Pay</label>
             <select class="form-select" id="validationCustom07" required>
               <option selected disabled value="">Choose Pay</option>
               <option value="123">...</option>
             </select>
-          </div>
+          </section>
 
-          <div class="col-md-6">
+          <section class="col-md-6">
             <label for="autoSizingCheck2" class="form-label">Plus</label>
             <div class="form-check">
               <input
@@ -202,8 +202,8 @@
                 Package + $10
               </label>
             </div>
-          </div>
-          <div class="col-md-6">
+          </section>
+          <section class="col-md-6">
             <label
               for="autoSizingCheck2"
               class="form-label fs-0"
@@ -221,9 +221,9 @@
                 Frameless + $1000
               </label>
             </div>
-          </div>
+          </section>
 
-          <div class="col-12">
+          <section class="col-12">
             <label for="validationServer07" class="form-label">Email</label>
             <input
               type="email"
@@ -234,71 +234,29 @@
             />
             <div class="invalid-feedback">Please provide a email.</div>
             <div class="valid-feedback">Look really beautiful email.</div>
-          </div>
-          <div class="col-12">
+          </section>
+          <section class="col-12">
             <label for="validationServer04" class="form-label">Remark</label>
             <textarea
               class="form-control"
               id="validationServer04"
               rows="3"
               name="Remark"
+              maxlength="200"
             ></textarea>
-          </div>
+          </section>
           <p class="text-center fs-4 mt-5">Total USD$6666</p>
-          <div class="col-12 text-center mt-0">
+          <section class="col-12 text-center mt-0">
             <button
               type="submit"
               class="btn btn-nbaBlue rounded-pill fs-4 px-5"
             >
               Send Order
             </button>
-          </div>
-        </div>
+          </section>
+        </main>
       </form>
 
-      <!-- 徵才 -->
-      <section class="container-lg border-nbaBlue border-top border-3">
-        <div
-          class="row row-cols-1 row-cols-lg-2 d-flex flex-column flex-md-row justify-content-center align-items-center mb-5 mt-5 gap-0"
-        >
-          <div class="col d-flex justify-content-center mb-3 mb-lg-0">
-            <!-- ms-auto 可推動本身寬度 -->
-            <!-- 不用設定小於md 要設定0 就不會在RWD跑版 ~~~~-->
-            <img
-              class="ms-lg-auto"
-              height="130"
-              src="nbaWeb/1506074059.svg"
-              alt=""
-            />
-            <div class="">
-              <h3>JOIN TEAM</h3>
-              <p>jersey fundraising</p>
-              <a
-                href="customzied.html"
-                class="btn btn-outline-dark rounded-pill fs-5"
-                >SEND MESSAGE</a
-              >
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center px-0">
-            <img
-              class=""
-              height="130"
-              src="nbaWeb/05284b30a1fda6bcdc09420b5c1e7127.svg"
-              alt=""
-            />
-            <div class="me-lg-auto">
-              <h3>JOIN TEAM</h3>
-              <p>customized jersey</p>
-              <a
-                href="customzied.html"
-                class="btn btn-outline-dark rounded-pill fs-5"
-                >SEND MESSAGE</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
       <!-- 小圖示 -->
       <a href="customzied.html">
         <img
@@ -308,17 +266,59 @@
           alt=""
           height="150"
           width="150"
-          class="custom_img_after position-fixed bottom-0 end-0 me-5"
+          class="custom_img_after position-fixed bottom-0 end-0 me-5 active"
           data-bs-toggle="tooltip"
           data-bs-placement="top"
           title="Let's customized jersey !"
         />
       </a>
-
-      <footer class="footer bg-dark text-center text-white py-2 pt-4">
-        <p>Copyright © 2022 JerseyTown.All rights reserved.</p>
-      </footer>
     </div>
+    <!-- 徵才 -->
+    <div class="container-lg border-nbaBlue border-top border-3 talent">
+      <div
+        class="row row-cols-1 row-cols-lg-2 d-flex flex-column flex-md-row justify-content-center align-items-center mb-5 mt-5 gap-0"
+      >
+        <div class="col d-flex justify-content-center mb-3 mb-lg-0">
+          <!-- ms-auto 可推動本身寬度 -->
+          <!-- 不用設定小於md 要設定0 就不會在RWD跑版 ~~~~-->
+          <img
+            class="ms-lg-auto"
+            height="130"
+            src="nbaWeb/1506074059.svg"
+            alt=""
+          />
+          <div class="">
+            <h3>JOIN TEAM</h3>
+            <p>jersey fundraising</p>
+            <a
+              href="customzied.html"
+              class="btn btn-outline-dark rounded-pill fs-5"
+              >SEND MESSAGE</a
+            >
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center px-0">
+          <img
+            class=""
+            height="130"
+            src="nbaWeb/05284b30a1fda6bcdc09420b5c1e7127.svg"
+            alt=""
+          />
+          <div class="me-lg-auto">
+            <h3>JOIN TEAM</h3>
+            <p>customized jersey</p>
+            <a
+              href="customzied.html"
+              class="btn btn-outline-dark rounded-pill fs-5"
+              >SEND MESSAGE</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer bg-dark text-center text-white py-2 pt-4">
+      <p>Copyright © 2022 JerseyTown.All rights reserved.</p>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
       integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="

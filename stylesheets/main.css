@@ -13276,8 +13276,13 @@ textarea.form-control-lg {
   right: 0;
   top: 0;
   margin: 0 auto;
-  max-width: 1440px;
   padding: 0 10px;
+}
+.navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl, .navbar .container-xxl {
+  max-width: 1440px;
+}
+.navbar .d-flex:hover .nav_h1 {
+  color: #cc2b31;
 }
 .navbar .navbar-brand {
   /* 圖片裝入容器 */
@@ -13291,9 +13296,6 @@ textarea.form-control-lg {
   white-space: nowrap;
   width: 50px;
   height: 50px;
-}
-.navbar .navbar-brand :hover .nav_h1 {
-  color: #cc2b31 !important;
 }
 .navbar .nav_h1 {
   color: #000;
@@ -13465,23 +13467,21 @@ textarea.form-control-lg {
   background-color: #fff;
   border-radius: 3%;
 }
-.rank_card .card-text {
-  white-space: nowrap; /*段落不自動換行*/
-  overflow: hidden; /*超過寬度隱藏*/
-  text-overflow: ellipsis; /*文字省略號*/
-  height: 80px;
-  -webkit-line-clamp: 2;
-  display: box;
-  -webkit-box-orient: vertical;
+.rank_card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 0;
 }
-.rank_card .rank_a:after {
-  content: "";
-  position: absolute;
-  top: 88%;
-  left: 10%;
-  background: #adb5bd;
-  width: 80%;
-  height: 1px;
+.rank_card .card-text {
+  white-space: wrap; /*段落自動換行*/
+  overflow: hidden; /*超過寬度隱藏*/
+  height: 75px;
+  margin-bottom: 0;
+}
+.rank_card .rank_a {
+  border-top: 1px #adb5bd solid;
+  padding-top: 10px;
 }
 
 @media (max-width: 1040px) {
@@ -13489,9 +13489,17 @@ textarea.form-control-lg {
     width: 100%;
   }
 }
+.talent {
+  max-width: 3000px;
+}
+
+.custom_img_after.active {
+  background-image: url(../nbaWeb/1652102106slam-dunk-silhouette-basketball.svg);
+}
+
 .animated_right {
   opacity: 0;
-  transition: all 1.5s;
+  transition: all 2s;
   transform: translateX(50px);
 }
 

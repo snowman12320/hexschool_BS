@@ -35,133 +35,146 @@
   </head>
 
   <body>
-    <div class="container-xxl">
-      <!-- 導覽 -->
-      <navbar class="navbar navbar-expand-md bg-white py-4">
-        <div class="container-fluid d-flex justify-content-between">
-          <div class="d-flex">
-            <a class="navbar-brand" href="index.html">JerseyTown</a>
-            <a class="align-self-center text-decoration-none" href="index.html">
-              <h1 class="fs-3 fw-bold mb-0 ms-n2 nav_h1">JTown</h1>
-            </a>
-          </div>
-          <!-- 漢堡 -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!--  -->
-          <div
-            class="collapse navbar-collapse mb-3 mb-md-0"
-            id="navbarSupportedContent"
-          >
-            <!-- margin-start 自動推到底 好用排版方式 -->
-            <ul class="navbar-nav ms-auto text-center">
-              <li class="nav-item">
+    <!-- 導覽 -->
+    <navbar class="navbar navbar-expand-md bg-white py-4">
+      <div class="container-fluid d-flex justify-content-between">
+        <div class="d-flex">
+          <a class="navbar-brand" href="index.html">JerseyTown</a>
+          <a class="align-self-center text-decoration-none" href="index.html">
+            <h1 class="fs-3 fw-bold mb-0 ms-n2 nav_h1">JTown</h1>
+          </a>
+        </div>
+        <!-- 漢堡 -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--  -->
+        <div
+          class="collapse navbar-collapse mb-3 mb-md-0"
+          id="navbarSupportedContent"
+        >
+          <!-- margin-start 自動推到底 好用排版方式 -->
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <!-- 關於active切換時有加上 但接著就會重新整理又不見 方法：- 1. 直接寫在 HTML 上（建議 -->
+              <a
+                class="nav-link px-4 py-3 active"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4 py-3" href="story.html">Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4 py-3" href="product.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4 py-3" href="rank.html">Rank</a>
+            </li>
+            <li class="ms-1">
+              <button
+                class="btn btn-nbaRed rounded-pill mt-lg-2 bg-nbaBlue nav_pill"
+              >
                 <a
-                  class="nav-link px-4 py-3"
-                  aria-current="page"
-                  href="index.html"
-                  >Home</a
+                  class="text-decoration-none fs-6 px-3 rounded-pill text-white"
+                  type="submit"
+                  href="customzied.html"
                 >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-4 py-3" href="story.html">Story</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-4 py-3" href="product.html">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-4 py-3" href="rank.html">Rank</a>
-              </li>
-              <li class="ms-1">
-                <button
-                  class="btn btn-nbaRed rounded-pill mt-lg-2 bg-nbaBlue nav_pill"
-                >
-                  <a
-                    class="text-decoration-none fs-6 px-3 rounded-pill text-white"
-                    type="submit"
-                    href="customzied.html"
-                  >
-                    Customized
-                  </a>
-                </button>
-              </li>
-            </ul>
-          </div>
+                  Customized
+                </a>
+              </button>
+            </li>
+          </ul>
         </div>
-      </navbar>
-      <!-- video banner -->
-      <banner
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="3000">
-            <!-- 加寬度100%不錯位跑版 -->
-            <video
-              width="1440"
-              height="810"
-              class="w-100"
-              controls
-              muted
-              autoplay
-            >
-              <source
-                src="./nbaWeb/Miami Heat vs. Memphis Grizzlies Full Game Highlights _ Oct 7 _ 2022 NBA Preseason.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <!-- 加寬度100%不錯位跑版 -->
-            <img
-              src="./nbaWeb/john-villablanca-_7EXgSQ98ew-unsplash.jpg"
-              class="of-cover op-top w-100"
-              alt="..."
-              height="810"
+      </div>
+    </navbar>
+    <!-- video banner -->
+    <banner
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <!-- 拿掉寬高可以自適應 且不會有上下白邊 -->
+          <!-- width="3000"
+            height="810" -->
+          <!-- 加寬度100%不錯位跑版 -->
+          <!-- <video
+            class="w-100"
+            style="margin-top: 104px !important"
+            controls
+            muted
+            autoplay
+          >
+            <source
+              src="./nbaWeb/Miami Heat vs. Memphis Grizzlies Full Game Highlights _ Oct 7 _ 2022 NBA Preseason.mp4"
+              type="video/mp4"
             />
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img
-              src="./nbaWeb/dean-bennett-nFjLHE4vmn4-unsplash.jpg"
-              class="d-block w-100 op-center of-cover"
-              alt="..."
-              height="810"
-            />
-          </div>
+          </video> -->
+          <iframe
+            height="810"
+            style="margin-top: 104px !important"
+            class="w-100"
+            src="https://www.youtube.com/embed/XchESOBdPZc?clip=UgkxE8NvfH5FXupMO4vEccLE_584qhfepjZo&amp;clipt=EP0PGK9t"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture "
+            allowfullscreen
+          ></iframe>
         </div>
-      </banner>
+        <div class="carousel-item" data-bs-interval="2000">
+          <!-- 加寬度100%不錯位跑版 -->
+          <img
+            src="./nbaWeb/john-villablanca-_7EXgSQ98ew-unsplash.jpg"
+            class="of-cover op-top w-100"
+            alt="..."
+            height="810"
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="./nbaWeb/dean-bennett-nFjLHE4vmn4-unsplash.jpg"
+            class="d-block w-100 op-center of-cover"
+            alt="..."
+            height="810"
+          />
+        </div>
+      </div>
+    </banner>
+    <div class="container-xxl">
       <!-- scroll down arrow -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -443,49 +456,7 @@
           >SEE MORE LISTS</a
         >
       </div>
-      <!-- 徵才 -->
-      <section class="container-lg border-nbaBlue border-top border-3">
-        <div
-          class="row row-cols-1 row-cols-lg-2 d-flex flex-column flex-md-row justify-content-center align-items-center mb-5 mt-5 gap-0"
-        >
-          <div class="col d-flex justify-content-center mb-3 mb-lg-0">
-            <!-- ms-auto 可推動本身寬度 -->
-            <!-- 不用設定小於md 要設定0 就不會在RWD跑版 ~~~~-->
-            <img
-              class="ms-lg-auto"
-              height="130"
-              src="nbaWeb/1506074059.svg"
-              alt=""
-            />
-            <div class="">
-              <h3>JOIN TEAM</h3>
-              <p>jersey fundraising</p>
-              <a
-                href="customzied.html"
-                class="btn btn-outline-dark rounded-pill fs-5"
-                >SEND MESSAGE</a
-              >
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center px-0">
-            <img
-              class=""
-              height="130"
-              src="nbaWeb/05284b30a1fda6bcdc09420b5c1e7127.svg"
-              alt=""
-            />
-            <div class="me-lg-auto">
-              <h3>JOIN TEAM</h3>
-              <p>customized jersey</p>
-              <a
-                href="customzied.html"
-                class="btn btn-outline-dark rounded-pill fs-5"
-                >SEND MESSAGE</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
+
       <!-- 小圖示 -->
       <a href="customzied.html">
         <img
@@ -501,11 +472,53 @@
           title="Let's customized jersey !"
         />
       </a>
-
-      <footer class="footer bg-dark text-center text-white py-2 pt-4">
-        <p>Copyright © 2022 JerseyTown.All rights reserved.</p>
-      </footer>
     </div>
+    <!-- 徵才 -->
+    <section class="container-lg border-nbaBlue border-top border-3 talent">
+      <div
+        class="row row-cols-1 row-cols-lg-2 d-flex flex-column flex-md-row justify-content-center align-items-center mb-5 mt-5 gap-0"
+      >
+        <div class="col d-flex justify-content-center mb-3 mb-lg-0">
+          <!-- ms-auto 可推動本身寬度 -->
+          <!-- 不用設定小於md 要設定0 就不會在RWD跑版 ~~~~-->
+          <img
+            class="ms-lg-auto"
+            height="130"
+            src="nbaWeb/1506074059.svg"
+            alt=""
+          />
+          <div class="">
+            <h3>JOIN TEAM</h3>
+            <p>jersey fundraising</p>
+            <a
+              href="customzied.html"
+              class="btn btn-outline-dark rounded-pill fs-5"
+              >SEND MESSAGE</a
+            >
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center px-0">
+          <img
+            class=""
+            height="130"
+            src="nbaWeb/05284b30a1fda6bcdc09420b5c1e7127.svg"
+            alt=""
+          />
+          <div class="me-lg-auto">
+            <h3>JOIN TEAM</h3>
+            <p>customized jersey</p>
+            <a
+              href="customzied.html"
+              class="btn btn-outline-dark rounded-pill fs-5"
+              >SEND MESSAGE</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer bg-dark text-center text-white py-2 pt-4">
+      <p>Copyright © 2022 JerseyTown.All rights reserved.</p>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
       integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="

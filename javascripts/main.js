@@ -112,7 +112,7 @@ $(document).ready(function () {
     // animated_right
     $(".animated_right").each(function () {
       var thisPos = $(this).offset().top;
-      if (windowHeight / 1.5 + scrollPos >= thisPos) {
+      if (windowHeight / 1.2 + scrollPos >= thisPos) {
         $(this).addClass("fadeIn_right");
       }
     });

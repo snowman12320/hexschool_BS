@@ -35,84 +35,84 @@
   </head>
 
   <body>
-    <div class="container-xxl">
-      <!-- 導覽 -->
-      <navbar class="navbar navbar-expand-md bg-white py-4">
-        <div class="container-fluid d-flex justify-content-between">
-          <div class="d-flex">
-            <a class="navbar-brand" href="index.html">JerseyTown</a>
-            <a class="align-self-center text-decoration-none" href="index.html">
-              <h1 class="fs-3 fw-bold mb-0 ms-n2 nav_h1">JTown</h1>
-            </a>
-          </div>
-          <!-- 漢堡 -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!--  -->
-          <div
-            class="collapse navbar-collapse mb-3 mb-md-0"
-            id="navbarSupportedContent"
-          >
-            <!-- margin-start 自動推到底 好用排版方式 -->
-            <ul class="navbar-nav ms-auto text-center">
-              <li class="nav-item">
-                <a
-                  class="nav-link px-4 py-3"
-                  aria-current="page"
-                  href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-4 py-3" href="story.html">Story</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-4 py-3" href="product.html">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-4 py-3" href="rank.html">Rank</a>
-              </li>
-              <li class="ms-1">
-                <button
-                  class="btn btn-nbaRed rounded-pill mt-lg-2 bg-nbaBlue nav_pill"
-                >
-                  <a
-                    class="text-decoration-none fs-6 px-3 rounded-pill text-white"
-                    type="submit"
-                    href="customzied.html"
-                  >
-                    Customized
-                  </a>
-                </button>
-              </li>
-            </ul>
-          </div>
+    <!-- 導覽 -->
+    <navbar class="navbar navbar-expand-md bg-white py-4">
+      <div class="container-fluid d-flex justify-content-between">
+        <div class="d-flex">
+          <a class="navbar-brand" href="index.html">JerseyTown</a>
+          <a class="align-self-center text-decoration-none" href="index.html">
+            <h1 class="fs-3 fw-bold mb-0 ms-n2 nav_h1">JTown</h1>
+          </a>
         </div>
-      </navbar>
-      <!-- 銷售排行 -->
-      <div
-        id="Ranking"
-        class="d-flex justify-content-center align-items-center text-dark border-3 border-nbaBlue border-top pt-5"
-        style="margin-top: 104px !important"
-      >
-        <h2>PLAYER</h2>
-        <img
-          src="nbaWeb/Lovepik_com-401319703-basketball.png"
-          height="80"
-          alt="storylogo"
-          class=""
-        />
-        <h2>STORY</h2>
+        <!-- 漢堡 -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--  -->
+        <div
+          class="collapse navbar-collapse mb-3 mb-md-0"
+          id="navbarSupportedContent"
+        >
+          <!-- margin-start 自動推到底 好用排版方式 -->
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <a
+                class="nav-link px-4 py-3"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4 py-3 active" href="story.html">Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4 py-3" href="product.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4 py-3" href="rank.html">Rank</a>
+            </li>
+            <li class="ms-1">
+              <button
+                class="btn btn-nbaRed rounded-pill mt-lg-2 bg-nbaBlue nav_pill"
+              >
+                <a
+                  class="text-decoration-none fs-6 px-3 rounded-pill text-white"
+                  type="submit"
+                  href="customzied.html"
+                >
+                  Customized
+                </a>
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
+    </navbar>
+    <!-- 銷售排行 -->
+    <div
+      id="Ranking"
+      class="d-flex justify-content-center align-items-center text-dark border-3 border-nbaBlue border-top pt-5"
+      style="margin-top: 104px !important"
+    >
+      <h2>PLAYER</h2>
+      <img
+        src="nbaWeb/Lovepik_com-401319703-basketball.png"
+        height="80"
+        alt="storylogo"
+        class=""
+      />
+      <h2>STORY</h2>
+    </div>
+    <div class="container-xxl">
       <p class="fs-6 text-pickBlack text-center mb-5">
         how to become the NBA all star player?
       </p>
@@ -194,49 +194,6 @@
         </div>
       </section>
 
-      <!-- 徵才 -->
-      <section class="container-lg border-nbaBlue border-top border-3">
-        <div
-          class="row row-cols-1 row-cols-lg-2 d-flex flex-column flex-md-row justify-content-center align-items-center mb-5 mt-5 gap-0"
-        >
-          <div class="col d-flex justify-content-center mb-3 mb-lg-0">
-            <!-- ms-auto 可推動本身寬度 -->
-            <!-- 不用設定小於md 要設定0 就不會在RWD跑版 ~~~~-->
-            <img
-              class="ms-lg-auto"
-              height="130"
-              src="nbaWeb/1506074059.svg"
-              alt=""
-            />
-            <div class="">
-              <h3>JOIN TEAM</h3>
-              <p>jersey fundraising</p>
-              <a
-                href="customzied.html"
-                class="btn btn-outline-dark rounded-pill fs-5"
-                >SEND MESSAGE</a
-              >
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center px-0">
-            <img
-              class=""
-              height="130"
-              src="nbaWeb/05284b30a1fda6bcdc09420b5c1e7127.svg"
-              alt=""
-            />
-            <div class="me-lg-auto">
-              <h3>JOIN TEAM</h3>
-              <p>customized jersey</p>
-              <a
-                href="customzied.html"
-                class="btn btn-outline-dark rounded-pill fs-5"
-                >SEND MESSAGE</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
       <!-- 小圖示 -->
       <a href="customzied.html">
         <img
@@ -252,11 +209,53 @@
           title="Let's customized jersey !"
         />
       </a>
-
-      <footer class="footer bg-dark text-center text-white py-2 pt-4">
-        <p>Copyright © 2022 JerseyTown.All rights reserved.</p>
-      </footer>
     </div>
+    <!-- 徵才 -->
+    <section class="container-lg border-nbaBlue border-top border-3 talent">
+      <div
+        class="row row-cols-1 row-cols-lg-2 d-flex flex-column flex-md-row justify-content-center align-items-center mb-5 mt-5 gap-0"
+      >
+        <div class="col d-flex justify-content-center mb-3 mb-lg-0">
+          <!-- ms-auto 可推動本身寬度 -->
+          <!-- 不用設定小於md 要設定0 就不會在RWD跑版 ~~~~-->
+          <img
+            class="ms-lg-auto"
+            height="130"
+            src="nbaWeb/1506074059.svg"
+            alt=""
+          />
+          <div class="">
+            <h3>JOIN TEAM</h3>
+            <p>jersey fundraising</p>
+            <a
+              href="customzied.html"
+              class="btn btn-outline-dark rounded-pill fs-5"
+              >SEND MESSAGE</a
+            >
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center px-0">
+          <img
+            class=""
+            height="130"
+            src="nbaWeb/05284b30a1fda6bcdc09420b5c1e7127.svg"
+            alt=""
+          />
+          <div class="me-lg-auto">
+            <h3>JOIN TEAM</h3>
+            <p>customized jersey</p>
+            <a
+              href="customzied.html"
+              class="btn btn-outline-dark rounded-pill fs-5"
+              >SEND MESSAGE</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer bg-dark text-center text-white py-2 pt-4">
+      <p>Copyright © 2022 JerseyTown.All rights reserved.</p>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
       integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
