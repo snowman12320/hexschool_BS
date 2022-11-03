@@ -13516,10 +13516,6 @@ textarea.form-control-lg {
   max-width: 3000px;
 }
 
-.custom_img_after.active {
-  background-image: url(../nbaWeb/1652102106slam-dunk-silhouette-basketball.svg);
-}
-
 .animated_right {
   opacity: 0;
   transition: all 2s;

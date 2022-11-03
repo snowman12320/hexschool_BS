@@ -119,9 +119,9 @@
       <!-- 球星個人列表 -->
       <!-- 不需要所有元素都在 container 內 --><!-- <div class="container-xxl"> -->
       <!-- row可用g-5 左右推版(column會上下推) / card內用會推上下  / gutter外 gap內-->
-      <section class="row row-cols-1 row-cols-xl-2 mx-2 g-5">
+      <main class="row row-cols-1 row-cols-xl-2 mx-2 g-5">
         <!-- 必填 -->
-        <div class="col col-xl-8 mx-auto mb-xl-5">
+        <article class="col col-xl-8 mx-auto mb-xl-5">
           <div class="card shadow">
             <div class="card-body">
               <h2 class="fs-4 lh-xl fw-bold">Kobe bryant - BLACK MAMBA</h2>
@@ -160,8 +160,8 @@
               />
             </div>
           </div>
-        </div>
-        <div class="col col-xl-4 small_card" style="z-index: 5">
+        </article>
+        <aside class="col col-xl-4 small_card" style="z-index: 5">
           <div class="card mb-5 text-center text-xl-start">
             <img
               data-num="001"
@@ -191,8 +191,8 @@
               >MERCH</a
             >
           </div>
-        </div>
-      </section>
+        </aside>
+      </main>
 
       <!-- 小圖示 -->
       <a href="customzied.html">
@@ -203,7 +203,8 @@
           alt=""
           height="150"
           width="150"
-          class="custom_img_after position-fixed bottom-0 end-0 me-5"
+          class="position-fixed bottom-0 end-0 me-5"
+          style="z-index: 9999"
           data-bs-toggle="tooltip"
           data-bs-placement="top"
           title="Let's customized jersey !"
