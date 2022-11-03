@@ -109,14 +109,15 @@
     </div>
     <div class="container-xxl">
       <!-- class 中有許多是沒有作用的，例如：row-cols-lg-12 ，row本身就是一列的flex，要變一欄再加上row-cols-1即可-->
-      <section class="row row-cols-1 px-5">
+      <!-- 此段下方的 .row-cols-1(本來就一列), col(有一個col-lg-3即可) 皆可以移除 -->
+      <main class="row ps-lg-5">
         <!-- 側欄 -->
         <!-- 上面row響應 下面col也要響應~~~ -->
-        <aside class="col col-lg-3 lh-lg aside">
+        <aside class="col-lg-3 lh-lg aside">
           <h3 class="text-center text-lg-start">Player</h3>
           <!-- BS內建margin 很多推不到位 可能要設定0 用開發者看會有淡黃區域 -->
           <ul
-            class="list-unstyled d-flex flex-lg-column justify-content-center mx-5 my-3 ms-0"
+            class="list-unstyled d-flex flex-lg-column justify-content-center my-3"
           >
             <li>
               <a
@@ -156,7 +157,7 @@
           </ul>
         </aside>
         <!-- 產品圖 -->
-        <div class="col col-lg-9 mb-5">
+        <section class="col-lg-9 mb-5">
           <div class="row row-cols-2 row-cols-lg-3 g-4">
             <div class="col overflow-hidden">
               <div
@@ -235,8 +236,8 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
 
       <!-- 小圖示 -->
       <a href="customzied.html">

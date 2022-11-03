@@ -36,6 +36,7 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables
+// sass 中應多利用變數，而不是色碼
 $blue: #0d6efd !default;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
@@ -47,6 +48,9 @@ $green: #198754 !default;
 $teal: #20c997 !default;
 $cyan: #0dcaf0 !default;
 $white: #fff;
+$light: rgb(231, 231, 249) !default;
+$cv_pink: #d99ae7;
+$yellowgreen: yellowgreen;
 $nbaBlue: #0253a5;
 $nbaRed: #cc2b31;
 $pickBlack: #3a3a3a;
@@ -305,12 +309,12 @@ $cyans: (
 
 // scss-docs-start theme-color-variables
 $primary: $blue !default;
-$secondary: #d99ae7; //$gray-600 !default;
-$success: yellowgreen !default;
+$secondary: $gray-600 !default;
+$success: $yellowgreen !default;
 $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
-$light: rgb(231, 231, 249) !default;
+$light: $light !default;
 $dark: $gray-900 !default;
 $nbaBlue: $nbaBlue;
 $nbaRed: $nbaRed;
@@ -320,6 +324,7 @@ $shadow: $shadow;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
+//// class上的顏色
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
@@ -1057,8 +1062,8 @@ $form-floating-transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out 
 $form-feedback-margin-top: $form-text-margin-top !default;
 $form-feedback-font-size: $form-text-font-size !default;
 $form-feedback-font-style: $form-text-font-style !default;
-$form-feedback-valid-color: yellowgreen !default;
-$form-feedback-invalid-color: red !default;
+$form-feedback-valid-color: $success !default;
+$form-feedback-invalid-color: $danger !default;
 
 $form-feedback-icon-valid-color: $form-feedback-valid-color !default;
 $form-feedback-icon-valid: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path fill='#{$form-feedback-icon-valid-color}' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/></svg>") !default;

@@ -52,7 +52,7 @@
   .navbar-nav .nav_pill {
     // 要加& 不然會指一條直的陰影 第一層不用加 第二層要加&
     &:hover {
-      box-shadow: 0 5px 1px rgba(0, 0, 0, 1);
+      box-shadow: 0 5px 1px $black;
     }
   }
 }
@@ -73,7 +73,11 @@
 }
 @include maxpad() {
   .banner_arrow {
-    left: 40%;
+    left: 35%;
+  }
+  .carousel iframe,
+  .carousel img {
+    height: 450px;
   }
 }
 @keyframes banner_arrow {

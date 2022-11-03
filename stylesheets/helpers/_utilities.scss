@@ -763,7 +763,8 @@ $utilities: map-merge(
       class: bgp,
       values: (
         center: center center,
-        bottom: center bottom,
+        bottom: bottom center,
+        top: top center,
       ),
     ),
     "background-attachment": (
