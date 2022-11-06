@@ -13354,7 +13354,7 @@ textarea.form-control-lg {
 
 @media (max-width: 768px) {
   .banner_arrow {
-    left: 35%;
+    left: 40%;
   }
   .carousel iframe,
 .carousel img {
@@ -13516,13 +13516,13 @@ textarea.form-control-lg {
   max-width: 3000px;
 }
 
-.animated_right {
+.animated_left {
   opacity: 0;
   transition: all 2s;
-  transform: translateX(50px);
+  transform: translateX(-50px);
 }
 
-.fadeIn_right {
+.fadeIn_left {
   opacity: 1;
   transform: translateX(0);
 }

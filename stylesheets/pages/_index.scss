@@ -73,7 +73,7 @@
 }
 @include maxpad() {
   .banner_arrow {
-    left: 35%;
+    left: 40%;
   }
   .carousel iframe,
   .carousel img {
@@ -237,13 +237,15 @@
   // margin: 0 auto;
 }
 
-//視差浮現(右左)
-.animated_right {
+//視差浮現(左右)
+.animated_left {
+  // display: none;
   opacity: 0;
   transition: all 2s;
-  transform: translateX(50px);
+  transform: translateX(-50px);
 }
-.fadeIn_right {
+.fadeIn_left {
+  // display: block;
   opacity: 1;
   transform: translateX(0);
 }

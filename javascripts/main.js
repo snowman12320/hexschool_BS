@@ -109,11 +109,11 @@ $(document).ready(function () {
     var windowHeight = $(window).height();
     // console.log(scrollPos, windowHeight);//捲動位置 和 視窗高度 互相都會變
 
-    // animated_right
-    $(".animated_right").each(function () {
+    // animated_left
+    $(".animated_left").each(function () {
       var thisPos = $(this).offset().top;
       if (windowHeight / 1.2 + scrollPos >= thisPos) {
-        $(this).addClass("fadeIn_right");
+        $(this).addClass("fadeIn_left");
       }
     });
     //animated_down
@@ -125,7 +125,7 @@ $(document).ready(function () {
     });
 
     // bg scroll
-    $("#profiles").css("background-position-y", -(scrollPos / 2) + "px");
-    $("#header-ele").css("transform", "translateY( " + scrollPos / 2 + "px )");
+    // $("#profiles").css("background-position-y", -(scrollPos / 2) + "px");
+    // $("#header-ele").css("transform", "translateY( " + scrollPos / 2 + "px )");
   });
 });
