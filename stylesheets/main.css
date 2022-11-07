@@ -13249,6 +13249,14 @@ textarea.form-control-lg {
     font-size: 48px;
   }
 }
+@media (max-width: 768px) {
+  .imgRwd {
+    display: none;
+  }
+  .maxpad_p {
+    display: none;
+  }
+}
 @media (min-width: 1040px) {
   .imgRwd {
     left: 20%;

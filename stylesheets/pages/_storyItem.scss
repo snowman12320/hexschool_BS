@@ -32,6 +32,14 @@
     }
   }
 }
+@include maxpad() {
+  .imgRwd {
+    display: none;
+  }
+  .maxpad_p {
+    display: none;
+  }
+}
 @include minipc() {
   .imgRwd {
     left: 20%;
