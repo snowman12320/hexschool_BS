@@ -3,20 +3,21 @@
 // 先引入函式 再改的變動檔 (只有變數這樣 其他像按鈕那樣引入)
 @import "../node_modules/bootstrap/scss/functions";
 // 變動檔跟原始檔 引入其一即可
-@import "./helpers/variables";
+@import "./helpers/variables"; //引入原始BS的覆蓋
 //再引入原始檔(這是總檔)
 // @import "../node_modules/bootstrap/scss/bootstrap";
 //bootstrap 5.2版本 新增了map.scss檔案，只要再匯入進去就可以解決問題 (map也需要使用到變數
 @import "../node_modules/bootstrap/scss/maps";
 //以下就是原始檔全部細項 依照需求引入 不須全部
 @import "../node_modules/bootstrap/scss/mixins";
-@import "./helpers/utilities";
+@import "./helpers/utilities"; //引入原始BS的覆蓋
 // Layout & components
 @import "../node_modules/bootstrap/scss/root";
 @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";
 //內建常用
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"; //內建icon
+@import "bootstrap-icons.css"; //內建icon
 @import "../node_modules/bootstrap/scss/images";
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
@@ -54,7 +55,7 @@
 // Utilities
 @import "../node_modules/bootstrap/scss/utilities/api";
 
-//老師自訂component
+//老師自訂component (大型工具)
 
 //第三方CDN
 @import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap"); //字型
@@ -63,7 +64,7 @@
 //第三方CSS
 @import "./lightbox.min.css"; //透過 npm 安裝 Lightbox 後，將 lightbox.min.js、lightbox.min.css 及 lightbox 圖片直接複製到其他資料夾，再引入使用
 
-//學生pages
+//學生pages 、variables(自訂變數) 、mix(小型工具) 、function(需帶入參數的)
 @import "./pages/rank";
 @import "./pages/story";
 @import "./pages/storyItem";

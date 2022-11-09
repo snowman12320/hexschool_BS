@@ -67,7 +67,9 @@
   position: fixed;
   bottom: 5%;
   left: 45%;
-  // margin-left: auto;
+  // margin-top: 50vh;
+  // margin-left: 50vw;
+  // margin: 0 auto;
   color: $white;
   animation: banner_arrow 1s infinite;
 }
@@ -226,6 +228,12 @@
   }
 }
 @include sellbtn_Rwd;
+
+@include maxphone {
+  .custom_img {
+    display: none;
+  }
+}
 
 // 不需要所有元素都在 container 內，背景也是需要設計的
 .talent {

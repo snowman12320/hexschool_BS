@@ -17,6 +17,11 @@
   }
 }
 // max 小於最大的 的響應式
+@mixin maxphone() {
+  @media (max-width: 568px) {
+    @content;
+  }
+}
 @mixin maxpad() {
   @media (max-width: 768px) {
     @content;
